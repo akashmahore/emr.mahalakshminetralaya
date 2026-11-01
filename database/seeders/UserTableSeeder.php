@@ -1,6 +1,6 @@
 <?php
 /**
- * ICTHospital - the minimum a fresh install needs to be usable.
+ * Mahalakshmi Netralaya - the minimum a fresh install needs to be usable.
  *
  * The version this replaces came from ICTSchool. It loaded seven SQL dumps of
  * demo school data, students, classes, sections, subjects, marks, grades and
@@ -13,8 +13,8 @@
  * reminder jobs look for. No demo patients: a hospital system should not ship
  * with invented people in it.
  *
- * Copyright (c) ICT Innovations <https://www.ictinnovations.com>
- * Part of ICTHospital <https://www.icthospital.com>
+ * Copyright (c) Mahalakshmi Netralaya
+ * Part of Mahalakshmi Netralaya EMR
  * Licensed under the GNU General Public License v3.0.
  */
 
@@ -72,7 +72,7 @@ class UserTableSeeder extends Seeder
         }
 
         Institute::create([
-            'name' => 'ICTHospital',
+            'name' => 'Mahalakshmi Netralaya',
             'establish' => date('Y'),
             'email' => '',
             'web' => '',

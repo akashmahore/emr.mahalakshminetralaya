@@ -1,0 +1,150 @@
+# Mahalakshmi Netralaya - Production Dockerfile
+# Multi-stage build for minimal production image
+
+# ===========================================
+# STAGE 1: Base PHP with extensions
+# ===========================================
+FROM php:8.3-fpm-alpine AS base
+
+# Install system dependencies
+RUN apk add --no-cache \
+    git \
+    unzip \
+    libzip-dev \
+    libpng-dev \
+    libjpeg-turbo-dev \
+    freetype-dev \
+    libxml2-dev \
+    icu-dev \
+    oniguruma-dev \
+    postgresql-dev \
+    linux-headers \
+    $PHPIZE_DEPS \
+    && docker-php-ext-configure gd --with-jpeg --with-freetype \
+    && docker-php-ext-install -j"$(nproc)" \
+        pdo_mysql \
+        mbstring \
+        zip \
+        gd \
+        bcmath \
+        intl \
+        exif \
+        opcache \
+        pcntl \
+    && pecl install redis \
+    && docker-php-ext-enable redis \
+    && rm -rf /var/cache/apk/* /tmp/* /var/tmp/*
+
+# Configure PHP for production
+RUN mv "$PHP_INI_DIR/php.ini-production" "$PHP_INI_DIR/php.ini" \
+    && echo "memory_limit = 512M" >> "$PHP_INI_DIR/conf.d/99-custom.ini" \
+    && echo "upload_max_filesize = 50M" >> "$PHP_INI_DIR/conf.d/99-custom.ini" \
+    && echo "post_max_size = 50M" >> "$PHP_INI_DIR/conf.d/99-custom.ini" \
+    && echo "max_execution_time = 300" >> "$PHP_INI_DIR/conf.d/99-custom.ini" \
+    && echo "date.timezone = Asia/Kolkata" >> "$PHP_INI_DIR/conf.d/99-custom.ini" \
+    && echo "opcache.enable = 1" >> "$PHP_INI_DIR/conf.d/99-custom.ini" \
+    && echo "opcache.memory_consumption = 256" >> "$PHP_INI_DIR/conf.d/99-custom.ini" \
+    && echo "opcache.interned_strings_buffer = 16" >> "$PHP_INI_DIR/conf.d/99-custom.ini" \
+    && echo "opcache.max_accelerated_files = 20000" >> "$PHP_INI_DIR/conf.d/99-custom.ini" \
+    && echo "opcache.validate_timestamps = 0" >> "$PHP_INI_DIR/conf.d/99-custom.ini" \
+    && echo "opcache.save_comments = 1" >> "$PHP_INI_DIR/conf.d/99-custom.ini"
+
+# ===========================================
+# STAGE 2: Composer dependencies
+# ===========================================
+FROM base AS composer
+
+COPY --from=composer:2 /usr/bin/composer /usr/bin/composer
+
+WORKDIR /app
+
+# Copy composer files first for caching
+COPY composer.json composer.lock ./
+
+# Install dependencies (no dev)
+RUN composer install \
+    --no-dev \
+    --no-interaction \
+    --no-plugins \
+    --no-scripts \
+    --prefer-dist \
+    --optimize-autoloader \
+    && composer clear-cache
+
+# ===========================================
+# STAGE 3: Frontend assets (Node)
+# ===========================================
+FROM node:20-alpine AS frontend
+
+WORKDIR /app
+
+COPY package.json package-lock.json* ./
+RUN npm ci --only=production
+
+COPY vite.config.js ./
+COPY resources ./resources
+COPY public ./public
+
+RUN npm run build
+
+# ===========================================
+# STAGE 4: Final production image
+# ===========================================
+FROM base AS production
+
+# Create non-root user
+RUN addgroup -g 1000 -S www \
+    && adduser -u 1000 -S www -G www
+
+WORKDIR /app
+
+# Copy composer dependencies
+COPY --from=composer /app/vendor ./vendor
+
+# Copy application code
+COPY . .
+
+# Copy built assets
+COPY --from=frontend /app/public/build ./public/build
+
+# Remove development files
+RUN rm -rf \
+    .git \
+    .github \
+    tests \
+    docker-compose*.yml \
+    Dockerfile* \
+    phpunit.xml \
+    README.md \
+    .env.example \
+    .editorconfig \
+    .gitignore \
+    node_modules \
+    resources/sass \
+    resources/js \
+    storage/framework/views/* \
+    storage/framework/cache/* \
+    storage/framework/sessions/* \
+    storage/logs/*
+
+# Set permissions
+RUN chown -R www:www /app \
+    && chmod -R 755 /app/storage /app/bootstrap/cache \
+    && find /app/storage -type f -exec chmod 644 {} \; \
+    && find /app/storage -type d -exec chmod 755 {} \;
+
+# Create required directories
+RUN mkdir -p /app/storage/framework/{views,cache,sessions,testing} \
+    && mkdir -p /app/storage/logs \
+    && mkdir -p /app/storage/app/public \
+    && chown -R www:www /app/storage
+
+USER www
+
+EXPOSE 9000
+
+# Health check
+HEALTHCHECK --interval=30s --timeout=10s --start-period=40s --retries=3 \
+    CMD php -r "exit(0);" || exit 1
+
+CMD ["php-fpm"]

@@ -1,7 +1,7 @@
 {{--
-  ICTHospital — dashboard
-  Copyright (c) ICT Innovations <https://www.ictinnovations.com>
-  Part of ICTHospital <https://www.icthospital.com>
+  Mahalakshmi Netralaya — dashboard
+  Copyright (c) Mahalakshmi Netralaya
+  Part of Mahalakshmi Netralaya EMR
   Licensed under the GNU General Public License v3.0.
 --}}
 @extends('layouts.master')

@@ -71,7 +71,7 @@
                                             <label for="type">Website</label>
                                             <div class="input-group">
                                                 <span class="input-group-addon"><i class="glyphicon glyphicon-info-sign blue"></i></span>
-                                                <input type="text"  class="form-control" required name="web" placeholder="www.ictinnovations.com" value="{{$institute->web}}">
+                                                <input type="text"  class="form-control" required name="web" placeholder="www.mahalakshminetralaya.com" value="{{$institute->web}}">
 
                                             </div>
                                         </div>
@@ -81,7 +81,7 @@
                                             <label for="type">Email</label>
                                             <div class="input-group">
                                                 <span class="input-group-addon"><i class="glyphicon glyphicon-info-sign blue"></i></span>
-                                                <input type="email" class="form-control" required name="email" placeholder="admin@shanixlab.com" value="{{$institute->email}}">
+                                                <input type="email" class="form-control" required name="email" placeholder="admin@mahalakshminetralaya.com" value="{{$institute->email}}">
 
                                             </div>
                                         </div>

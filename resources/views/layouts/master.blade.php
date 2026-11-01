@@ -32,7 +32,7 @@ $permision[] = $permission->permission_name;
         ===
     -->
     <meta charset="utf-8">
-    <title>@if(Session::get('inName')=='') ICTHospital @else {{Session::get('inName')}} @endif</title>
+    <title>@if(Session::get('inName')=='') Mahalakshmi Netralaya @else {{Session::get('inName')}} @endif</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="csrf-token" content="{{ csrf_token() }}" />
 
@@ -82,7 +82,7 @@ window.addEventListener('keydown',function(e){if(e.keyIdentifier=='U+000A'||e.ke
 
 
     <link rel="icon" href="{{ asset('favicon.ico') }}" sizes="any">
-    <link rel="icon" type="image/svg+xml" href="{{ asset('img/brand/icthospital-mark.svg') }}">
+    <link rel="icon" type="image/svg+xml" href="{{ asset('img/brand/mahalakshmi-mark.svg') }}">
     <link rel="apple-touch-icon" href="{{ asset('img/brand/favicon-180.png') }}">
     {{--<link href='//cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/css/bootstrap-select.min.css' rel='stylesheet'>--}}
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.min.css">
@@ -343,7 +343,7 @@ table i {
     <!-- favicon links are in the head above -->
     <link href="https://cdn.datatables.net/buttons/1.5.2/css/buttons.dataTables.min.css" rel="stylesheet">
 
-  {{-- ICTHospital: keep the content clear of the fixed sidebar.
+  {{-- Mahalakshmi Netralaya: keep the content clear of the fixed sidebar.
 
        theme.css offsets .page-container2 by the sidebar width, but @yield('content')
        renders inside .main-content, which is in a different branch of this layout and
@@ -372,7 +372,7 @@ table i {
       .box-header h2 { white-space: normal; }
     }
   </style>
-  <link href="{{ asset('css/icthospital-ui.css') }}?v=2026.10" rel="stylesheet">
+  <link href="{{ asset('css/mahalakshmi-ui.css') }}?v=2026.10" rel="stylesheet">
 </head>
 
 <body @if(Request::is('student/create-file')) @else class="animsition" @endif>
@@ -400,8 +400,8 @@ table i {
                             <div class="logo d-block d-lg-none">
 
                                 <a class="js-arrow" href="#">
-                                    @if(Session::get('inName')=='' || Session::get('inName')=='ICTHospital')
-                                    <img src="{{ asset('img/brand/icthospital-logo.svg') }}" alt="ICTHospital" style="height:34px" />
+                                    @if(Session::get('inName')=='' || Session::get('inName')=='Mahalakshmi Netralaya')
+                                    <img src="{{ asset('img/brand/mahalakshmi-logo.svg') }}" alt="Mahalakshmi Netralaya" style="height:34px" />
                                     @else
                                       <h2>{{Session::get('inName')}}</h2>
                                     @endif
@@ -684,7 +684,7 @@ table i {
                           <div class="row">
                             <div class="col-md-12">
                                 <div class="copyright">
-                                   <p class="col-md-9 col-sm-9 col-xs-12 copyright"> <a href="#" target="_blank">{{Session::get('inName')}}</a> &copy;<?php echo date("Y");?></p>
+                                   <p class="col-md-9 col-sm-9 col-xs-12 copyright"> <a href="#" target="_blank">Mahalakshmi Netralaya</a> &copy;<?php echo date("Y");?></p>
                                     <p class="col-md-3 col-sm-3 col-xs-12 powered-by">Developed by:
                                     <a href="https://www.ictinnovations.com/" target="_blank" rel="noopener">ICT Innovations</a></p>
                                 </div>

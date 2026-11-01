@@ -71,4 +71,41 @@ return [
         'icon' => 'glyphicon-usd',
     ],
 
+    // Ophthalmology-specific staff
+    'optometrist' => [
+        'group' => 'Optometrist',
+        'model' => \App\Models\Optometrist::class,
+        'label' => 'Optometrists',
+        'singular' => 'optometrist',
+        'permission' => 'staff',
+        'icon' => 'glyphicon-eye-open',
+    ],
+
+    'orthoptist' => [
+        'group' => 'Orthoptist',
+        'model' => \App\Models\Orthoptist::class,
+        'label' => 'Orthoptists',
+        'singular' => 'orthoptist',
+        'permission' => 'staff',
+        'icon' => 'glyphicon-eye-close',
+    ],
+
+    'optician' => [
+        'group' => 'Optician',
+        'model' => \App\Models\Optician::class,
+        'label' => 'Opticians',
+        'singular' => 'optician',
+        'permission' => 'staff',
+        'icon' => 'glyphicon-glass',
+    ],
+
+    'camp_coordinator' => [
+        'group' => 'Camp Coordinator',
+        'model' => \App\Models\CampCoordinator::class,
+        'label' => 'Camp Coordinators',
+        'singular' => 'camp coordinator',
+        'permission' => 'staff',
+        'icon' => 'glyphicon-tent',
+    ],
+
 ];

@@ -1,0 +1,305 @@
+version: '3.8'
+
+services:
+  # -------------------------------------------
+  # NGINX - Reverse Proxy & Static Files
+  # -------------------------------------------
+  nginx:
+    image: nginx:alpine
+    container_name: mn-nginx
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./nginx.prod.conf:/etc/nginx/nginx.conf:ro
+      - ./ssl:/etc/nginx/ssl:ro
+      - ./public:/app/public:ro
+      - storage:/app/storage:ro
+    depends_on:
+      - app
+    networks:
+      - mn-network
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "wget", "-q", "--spider", "http://localhost/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  # -------------------------------------------
+  # PHP-FPM Application Server
+  # -------------------------------------------
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile.prod
+    container_name: mn-app
+    environment:
+      - APP_ENV=production
+      - APP_DEBUG=false
+      - LOG_CHANNEL=stack
+      - LOG_LEVEL=error
+      - DB_HOST=db
+      - DB_PORT=3306
+      - DB_DATABASE=mahalakshmi_netralaya
+      - DB_USERNAME=${DB_USER}
+      - DB_PASSWORD=${DB_PASSWORD}
+      - REDIS_HOST=redis
+      - REDIS_PASSWORD=${REDIS_PASSWORD}
+      - REDIS_PORT=6379
+      - CACHE_DRIVER=redis
+      - SESSION_DRIVER=redis
+      - QUEUE_CONNECTION=redis
+      - FILESYSTEM_DISK=s3
+      - AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY}
+      - AWS_SECRET_ACCESS_KEY=${AWS_SECRET_KEY}
+      - AWS_DEFAULT_REGION=${AWS_REGION}
+      - AWS_BUCKET=${AWS_BUCKET}
+      - MAIL_MAILER=smtp
+      - MAIL_HOST=${MAIL_HOST}
+      - MAIL_PORT=${MAIL_PORT}
+      - MAIL_USERNAME=${MAIL_USERNAME}
+      - MAIL_PASSWORD=${MAIL_PASSWORD}
+      - MAIL_ENCRYPTION=${MAIL_ENCRYPTION}
+      - MAIL_FROM_ADDRESS=${MAIL_FROM_ADDRESS}
+      - MAIL_FROM_NAME="${APP_NAME}"
+      - SENTRY_LARAVEL_DSN=${SENTRY_DSN}
+      - PASSPORT_PRIVATE_KEY=${PASSPORT_PRIVATE_KEY}
+      - PASSPORT_PUBLIC_KEY=${PASSPORT_PUBLIC_KEY}
+      - SANCTUM_STATEFUL_DOMAINS=${SANCTUM_DOMAINS}
+      - SESSION_DOMAIN=${SESSION_DOMAIN}
+    volumes:
+      - storage:/app/storage
+      - bootstrap-cache:/app/bootstrap/cache
+    depends_on:
+      - db
+      - redis
+    networks:
+      - mn-network
+    restart: unless-stopped
+    deploy:
+      resources:
+        limits:
+          cpus: '2'
+          memory: 2G
+        reservations:
+          cpus: '1'
+          memory: 1G
+    healthcheck:
+      test: ["CMD", "php", "-r", "exit(0);"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  # -------------------------------------------
+  # Queue Workers (Horizon)
+  # -------------------------------------------
+  horizon:
+    build:
+      context: .
+      dockerfile: Dockerfile.prod
+    container_name: mn-horizon
+    command: php artisan horizon
+    environment:
+      - APP_ENV=production
+      - APP_DEBUG=false
+      - LOG_CHANNEL=stack
+      - LOG_LEVEL=error
+      - DB_HOST=db
+      - DB_PORT=3306
+      - DB_DATABASE=mahalakshmi_netralaya
+      - DB_USERNAME=${DB_USER}
+      - DB_PASSWORD=${DB_PASSWORD}
+      - REDIS_HOST=redis
+      - REDIS_PASSWORD=${REDIS_PASSWORD}
+      - REDIS_PORT=6379
+      - CACHE_DRIVER=redis
+      - SESSION_DRIVER=redis
+      - QUEUE_CONNECTION=redis
+    volumes:
+      - storage:/app/storage
+      - bootstrap-cache:/app/bootstrap/cache
+    depends_on:
+      - db
+      - redis
+    networks:
+      - mn-network
+    restart: unless-stopped
+    deploy:
+      replicas: 2
+      resources:
+        limits:
+          cpus: '1'
+          memory: 1G
+        reservations:
+          cpus: '0.5'
+          memory: 512M
+
+  # -------------------------------------------
+  # Scheduler (Cron Jobs)
+  # -------------------------------------------
+  scheduler:
+    build:
+      context: .
+      dockerfile: Dockerfile.prod
+    container_name: mn-scheduler
+    command: php artisan schedule:work
+    environment:
+      - APP_ENV=production
+      - APP_DEBUG=false
+      - LOG_CHANNEL=stack
+      - LOG_LEVEL=error
+      - DB_HOST=db
+      - DB_PORT=3306
+      - DB_DATABASE=mahalakshmi_netralaya
+      - DB_USERNAME=${DB_USER}
+      - DB_PASSWORD=${DB_PASSWORD}
+    volumes:
+      - storage:/app/storage
+      - bootstrap-cache:/app/bootstrap/cache
+    depends_on:
+      - db
+    networks:
+      - mn-network
+    restart: unless-stopped
+    deploy:
+      resources:
+        limits:
+          cpus: '0.5'
+          memory: 512M
+        reservations:
+          cpus: '0.25'
+          memory: 256M
+
+  # -------------------------------------------
+  # MariaDB Database
+  # -------------------------------------------
+  db:
+    image: mariadb:11
+    container_name: mn-db
+    environment:
+      - MARIADB_ROOT_PASSWORD_FILE=/run/secrets/db_root_password
+      - MARIADB_DATABASE=mahalakshmi_netralaya
+      - MARIADB_USER_FILE=/run/secrets/db_user
+      - MARIADB_PASSWORD_FILE=/run/secrets/db_password
+    volumes:
+      - db-data:/var/lib/mysql
+      - ./backups:/backups
+      - ./mariadb.cnf:/etc/mysql/conf.d/custom.cnf:ro
+    secrets:
+      - db_root_password
+      - db_user
+      - db_password
+    networks:
+      - mn-network
+    restart: unless-stopped
+    command:
+      - --innodb-buffer-pool-size=1G
+      - --innodb-log-file-size=256M
+      - --max-connections=500
+      - --slow-query-log=1
+      - --long-query-time=2
+    deploy:
+      resources:
+        limits:
+          cpus: '2'
+          memory: 3G
+        reservations:
+          cpus: '1'
+          memory: 2G
+    healthcheck:
+      test: ["CMD", "healthcheck.sh", "--connect", "--innodb_initialized"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # -------------------------------------------
+  # Redis (Cache, Sessions, Queues)
+  # -------------------------------------------
+  redis:
+    image: redis:7-alpine
+    container_name: mn-redis
+    command: redis-server --appendonly yes --requirepass ${REDIS_PASSWORD} --maxmemory 512mb --maxmemory-policy allkeys-lru
+    volumes:
+      - redis-data:/data
+    networks:
+      - mn-network
+    restart: unless-stopped
+    deploy:
+      resources:
+        limits:
+          cpus: '0.5'
+          memory: 1G
+        reservations:
+          cpus: '0.25'
+          memory: 512M
+    healthcheck:
+      test: ["CMD", "redis-cli", "-a", "${REDIS_PASSWORD}", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # -------------------------------------------
+  # Automated Backups
+  # -------------------------------------------
+  backup:
+    image: mariadb:11
+    container_name: mn-backup
+    command: |
+      sh -c "
+        echo 'Starting backup service...'
+        while true; do
+          DATE=$$(date +%%Y%%m%%d_%%H%%M%%S)
+          FILE=/backups/mahalakshmi_netralaya_$${DATE}.sql.gz
+          echo \"[$$(date)] Creating backup: $${FILE}\"
+          mysqldump -h db -u root -p$${MYSQL_ROOT_PASSWORD} \
+            --single-transaction --routines --triggers --events \
+            mahalakshmi_netralaya | gzip > $${FILE}
+          if [ $$? -eq 0 ]; then
+            echo \"[$$(date)] Backup completed successfully\"
+            # Keep last 30 days
+            find /backups -name 'mahalakshmi_netralaya_*.sql.gz' -mtime +30 -delete
+            # Also keep last 7 days of daily backups locally
+          else
+            echo \"[$$(date)] ERROR: Backup failed!\"
+          fi
+          sleep 86400
+        done
+      "
+    environment:
+      - MYSQL_ROOT_PASSWORD_FILE=/run/secrets/db_root_password
+    volumes:
+      - ./backups:/backups
+    secrets:
+      - db_root_password
+    networks:
+      - mn-network
+    restart: unless-stopped
+    deploy:
+      resources:
+        limits:
+          cpus: '0.5'
+          memory: 512M
+
+volumes:
+  db-data:
+    driver: local
+  redis-data:
+    driver: local
+  storage:
+    driver: local
+  bootstrap-cache:
+    driver: local
+
+secrets:
+  db_root_password:
+    external: true
+  db_user:
+    external: true
+  db_password:
+    external: true
+
+networks:
+  mn-network:
+    driver: overlay
+    attachable: true

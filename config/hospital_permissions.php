@@ -153,5 +153,115 @@ return [
         'Cash Close All Users',
         'Consultation View',
         'Consultation Add',
+
+        // Ophthalmology - Eye Examinations
+        'Eye Examination View',
+        'Eye Examination Add',
+        'Eye Examination Update',
+        'Eye Examination Delete',
+        'Eye Examination Print',
+
+        // Ophthalmology - Cataract
+        'Cataract Evaluation View',
+        'Cataract Evaluation Add',
+        'Cataract Evaluation Update',
+        'Cataract Evaluation Delete',
+        'Cataract Biometry View',
+        'Cataract Biometry Add',
+        'Cataract IOL Calculator View',
+        'Cataract Surgery Planning',
+
+        // Ophthalmology - Glaucoma
+        'Glaucoma Evaluation View',
+        'Glaucoma Evaluation Add',
+        'Glaucoma Evaluation Update',
+        'Glaucoma Evaluation Delete',
+        'Glaucoma VF Analysis',
+        'Glaucoma OCT Analysis',
+        'Glaucoma Medication Chart',
+        'Glaucoma Laser History',
+
+        // Ophthalmology - Retina
+        'Retina Evaluation View',
+        'Retina Evaluation Add',
+        'Retina Evaluation Update',
+        'Retina Evaluation Delete',
+        'Retina OCT Macular',
+        'Retina FFA ICGA',
+        'Retina Injection Log',
+        'Retina Laser Log',
+        'Retina Surgery Log',
+
+        // Ophthalmology - Cornea
+        'Cornea Evaluation View',
+        'Cornea Evaluation Add',
+        'Cornea Evaluation Update',
+        'Cornea Evaluation Delete',
+        'Cornea Topography',
+        'Cornea Pachymetry',
+        'Cornea Specular Microscopy',
+        'Cornea Refractive Planning',
+        'Cornea CXL Protocol',
+        'Cornea Transplant Planning',
+
+        // Ophthalmology - Pediatric
+        'Pediatric Evaluation View',
+        'Pediatric Evaluation Add',
+        'Pediatric Evaluation Update',
+        'Pediatric Evaluation Delete',
+        'Pediatric Squint',
+        'Pediatric Amblyopia',
+        'Pediatric Binocular Vision',
+        'Pediatric ROP',
+
+        // Ophthalmology - Oculoplasty
+        'Oculoplasty Evaluation View',
+        'Oculoplasty Evaluation Add',
+        'Oculoplasty Evaluation Update',
+        'Oculoplasty Evaluation Delete',
+        'Oculoplasty Eyelid',
+        'Oculoplasty Lacrimal',
+        'Oculoplasty Orbit',
+
+        // Ophthalmology - Surgery & Post-op
+        'Ophthalmic Surgery View',
+        'Ophthalmic Surgery Add',
+        'Ophthalmic Surgery Update',
+        'Ophthalmic Surgery Schedule',
+        'Ophthalmic Surgery Operative Notes',
+        'Postop Followup View',
+        'Postop Followup Add',
+        'Postop Followup Update',
+
+        // Optical Shop
+        'Optical Prescription View',
+        'Optical Prescription Add',
+        'Optical Prescription Update',
+        'Optical Prescription Dispense',
+        'Optical Frame View',
+        'Optical Frame Add',
+        'Optical Frame Update',
+        'Optical Lens View',
+        'Optical Lens Add',
+        'Optical Lens Update',
+        'Optical Inventory View',
+        'Optical Inventory Manage',
+        'Optical QC View',
+        'Optical QC Manage',
+
+        // Contact Lens
+        'Contact Lens View',
+        'Contact Lens Add',
+        'Contact Lens Update',
+        'Contact Lens Fitting',
+        'Contact Lens Trial',
+        'Contact Lens Dispense',
+
+        // Eye Camps
+        'Eye Camp View',
+        'Eye Camp Add',
+        'Eye Camp Update',
+        'Eye Camp Screening',
+        'Eye Camp Reports',
     ],
 ];

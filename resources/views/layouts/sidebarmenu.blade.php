@@ -1,5 +1,5 @@
 {{--
-  ICTHospital - main navigation.
+  Mahalakshmi Netralaya - main navigation.
 
   Every entry here points at a route that exists. The menu this replaces was the
   ICTSchool one: students, teachers, classes, sections, exams, marks, GPA rules,
@@ -10,8 +10,8 @@
   Hospital modules still being built (patients, appointments, wards, pharmacy,
   laboratory) will be added here as their controllers land.
 
-  Copyright (c) ICT Innovations <https://www.ictinnovations.com>
-  Part of ICTHospital <https://www.icthospital.com>
+  Copyright (c) Mahalakshmi Netralaya
+  Part of Mahalakshmi Netralaya EMR
   Licensed under the GNU General Public License v3.0.
 --}}
 <?php
@@ -43,7 +43,7 @@ $active = function ($prefixes) use ($here) {
 ?>
 
 <div class="sidebar-nav nav-canvas-thumb">
-  <a class="ih-brand" href="{{ url('/dashboard') }}" aria-label="ICTHospital home"><img src="{{ asset('img/brand/icthospital-logo.svg') }}" alt="ICTHospital"></a>
+  <a class="ih-brand" href="{{ url('/dashboard') }}" aria-label="Mahalakshmi Netralaya home"><img src="{{ asset('img/brand/mahalakshmi-logo.svg') }}" alt="Mahalakshmi Netralaya"></a>
   <ul class="nav nav-pills nav-stacked main-menu">
 
     <li class="nav-header">Main</li>
@@ -178,6 +178,184 @@ $active = function ($prefixes) use ($here) {
       </a>
     </li>
 
+    <li class="nav-header">Ophthalmology</li>
+
+    @if ($may('eye_examination_view'))
+    <li>
+      <a class="dropmenu {{ $active('eye-examinations') ? 'active' : '' }}" href="#">
+        <i class="fas fa-eye"></i><span class="hidden-tablet"> Eye Examinations</span>
+        <span class="pull-right"><i class="glyphicon glyphicon-chevron-down"></i></span>
+      </a>
+      <ul style="{{ $active('eye-examinations') ? '' : 'display:none;' }}">
+        <li><a href="{{ url('/eye-examinations') }}"><i class="fas fa-list"></i> All Examinations</a></li>
+        <li><a href="{{ url('/eye-examinations/create') }}"><i class="fas fa-plus"></i> New Examination</a></li>
+        <li><a href="{{ url('/eye-examinations/today') }}"><i class="fas fa-calendar-day"></i> Today's Examinations</a></li>
+      </ul>
+    </li>
+    @endif
+
+    @if ($may('cataract_evaluation_view'))
+    <li>
+      <a class="dropmenu {{ $active('cataract') ? 'active' : '' }}" href="#">
+        <i class="fas fa-circle"></i><span class="hidden-tablet"> Cataract</span>
+        <span class="pull-right"><i class="glyphicon glyphicon-chevron-down"></i></span>
+      </a>
+      <ul style="{{ $active('cataract') ? '' : 'display:none;' }}">
+        <li><a href="{{ url('/cataract/evaluations') }}"><i class="fas fa-clipboard-check"></i> Evaluations</a></li>
+        <li><a href="{{ url('/cataract/biometry') }}"><i class="fas fa-ruler-combined"></i> Biometry / IOL Calc</a></li>
+        <li><a href="{{ url('/cataract/surgery-plan') }}"><i class="fas fa-calendar-plus"></i> Surgery Planning</a></li>
+      </ul>
+    </li>
+    @endif
+
+    @if ($may('glaucoma_evaluation_view'))
+    <li>
+      <a class="dropmenu {{ $active('glaucoma') ? 'active' : '' }}" href="#">
+        <i class="fas fa-tint"></i><span class="hidden-tablet"> Glaucoma</span>
+        <span class="pull-right"><i class="glyphicon glyphicon-chevron-down"></i></span>
+      </a>
+      <ul style="{{ $active('glaucoma') ? '' : 'display:none;' }}">
+        <li><a href="{{ url('/glaucoma/evaluations') }}"><i class="fas fa-clipboard-check"></i> Evaluations</a></li>
+        <li><a href="{{ url('/glaucoma/vf-analysis') }}"><i class="fas fa-chart-area"></i> VF Analysis</a></li>
+        <li><a href="{{ url('/glaucoma/oct-rnfl') }}"><i class="fas fa-chart-line"></i> RNFL OCT</a></li>
+        <li><a href="{{ url('/glaucoma/medications') }}"><i class="fas fa-pills"></i> Medication Chart</a></li>
+      </ul>
+    </li>
+    @endif
+
+    @if ($may('retina_evaluation_view'))
+    <li>
+      <a class="dropmenu {{ $active('retina') ? 'active' : '' }}" href="#">
+        <i class="fas fa-project-diagram"></i><span class="hidden-tablet"> Retina</span>
+        <span class="pull-right"><i class="glyphicon glyphicon-chevron-down"></i></span>
+      </a>
+      <ul style="{{ $active('retina') ? '' : 'display:none;' }}">
+        <li><a href="{{ url('/retina/evaluations') }}"><i class="fas fa-clipboard-check"></i> Evaluations</a></li>
+        <li><a href="{{ url('/retina/oct-macular') }}"><i class="fas fa-layer-group"></i> OCT Macular</a></li>
+        <li><a href="{{ url('/retina/ffa-icga') }}"><i class="fas fa-image"></i> FFA / ICGA</a></li>
+        <li><a href="{{ url('/retina/injections') }}"><i class="fas fa-syringe"></i> Anti-VEGF Log</a></li>
+        <li><a href="{{ url('/retina/laser') }}"><i class="fas fa-bolt"></i> Laser Log</a></li>
+      </ul>
+    </li>
+    @endif
+
+    @if ($may('cornea_evaluation_view'))
+    <li>
+      <a class="dropmenu {{ $active('cornea') ? 'active' : '' }}" href="#">
+        <i class="fas fa-shapes"></i><span class="hidden-tablet"> Cornea & Refractive</span>
+        <span class="pull-right"><i class="glyphicon glyphicon-chevron-down"></i></span>
+      </a>
+      <ul style="{{ $active('cornea') ? '' : 'display:none;' }}">
+        <li><a href="{{ url('/cornea/evaluations') }}"><i class="fas fa-clipboard-check"></i> Evaluations</a></li>
+        <li><a href="{{ url('/cornea/topography') }}"><i class="fas fa-map-marked-alt"></i> Topography</a></li>
+        <li><a href="{{ url('/cornea/refractive') }}"><i class="fas fa-magic"></i> Refractive Planning</a></li>
+        <li><a href="{{ url('/cornea/cxl') }}"><i class="fas fa-link"></i> Cross-Linking</a></li>
+      </ul>
+    </li>
+    @endif
+
+    @if ($may('pediatric_evaluation_view'))
+    <li>
+      <a class="dropmenu {{ $active('pediatric') ? 'active' : '' }}" href="#">
+        <i class="fas fa-child"></i><span class="hidden-tablet"> Pediatric</span>
+        <span class="pull-right"><i class="glyphicon glyphicon-chevron-down"></i></span>
+      </a>
+      <ul style="{{ $active('pediatric') ? '' : 'display:none;' }}">
+        <li><a href="{{ url('/pediatric/evaluations') }}"><i class="fas fa-clipboard-check"></i> Evaluations</a></li>
+        <li><a href="{{ url('/pediatric/squint') }}"><i class="fas fa-compress-alt"></i> Squint</a></li>
+        <li><a href="{{ url('/pediatric/amblyopia') }}"><i class="fas fa-eye-slash"></i> Amblyopia</a></li>
+        <li><a href="{{ url('/pediatric/rop') }}"><i class="fas fa-baby"></i> ROP Screening</a></li>
+      </ul>
+    </li>
+    @endif
+
+    @if ($may('oculoplasty_evaluation_view'))
+    <li>
+      <a class="dropmenu {{ $active('oculoplasty') ? 'active' : '' }}" href="#">
+        <i class="fas fa-hand-paper"></i><span class="hidden-tablet"> Oculoplasty</span>
+        <span class="pull-right"><i class="glyphicon glyphicon-chevron-down"></i></span>
+      </a>
+      <ul style="{{ $active('oculoplasty') ? '' : 'display:none;' }}">
+        <li><a href="{{ url('/oculoplasty/evaluations') }}"><i class="fas fa-clipboard-check"></i> Evaluations</a></li>
+        <li><a href="{{ url('/oculoplasty/eyelid') }}"><i class="fas fa-eye"></i> Eyelid</a></li>
+        <li><a href="{{ url('/oculoplasty/lacrimal') }}"><i class="fas fa-tint"></i> Lacrimal</a></li>
+        <li><a href="{{ url('/oculoplasty/orbit') }}"><i class="fas fa-globe"></i> Orbit</a></li>
+      </ul>
+    </li>
+    @endif
+
+    @if ($may('ophthalmic_surgery_view'))
+    <li>
+      <a class="dropmenu {{ $active('surgeries') ? 'active' : '' }}" href="#">
+        <i class="fas fa-procedures"></i><span class="hidden-tablet"> Surgery & OT</span>
+        <span class="pull-right"><i class="glyphicon glyphicon-chevron-down"></i></span>
+      </a>
+      <ul style="{{ $active('surgeries') ? '' : 'display:none;' }}">
+        <li><a href="{{ url('/surgeries') }}"><i class="fas fa-list"></i> All Surgeries</a></li>
+        <li><a href="{{ url('/surgeries/today') }}"><i class="fas fa-calendar-day"></i> Today's OT List</a></li>
+        <li><a href="{{ url('/surgeries/schedule') }}"><i class="fas fa-calendar-week"></i> OT Schedule</a></li>
+        <li><a href="{{ url('/surgeries/operative-notes') }}"><i class="fas fa-file-medical"></i> Operative Notes</a></li>
+      </ul>
+    </li>
+    @endif
+
+    @if ($may('postop_followup_view'))
+    <li>
+      <a class="{{ $active('postop') ? 'active' : '' }}" href="{{ url('/postop-followups') }}">
+        <i class="fas fa-calendar-check"></i><span class="hidden-tablet"> Post-op Followup</span>
+      </a>
+    </li>
+    @endif
+
+    <li class="nav-header">Optical Shop & Contact Lens</li>
+
+    @if ($may('optical_prescription_view'))
+    <li>
+      <a class="dropmenu {{ $active('optical') ? 'active' : '' }}" href="#">
+        <i class="fas fa-glasses"></i><span class="hidden-tablet"> Optical Shop</span>
+        <span class="pull-right"><i class="glyphicon glyphicon-chevron-down"></i></span>
+      </a>
+      <ul style="{{ $active('optical') ? '' : 'display:none;' }}">
+        <li><a href="{{ url('/optical/prescriptions') }}"><i class="fas fa-clipboard-list"></i> Prescriptions</a></li>
+        <li><a href="{{ url('/optical/frames') }}"><i class="fas fa-boxes"></i> Frames Inventory</a></li>
+        <li><a href="{{ url('/optical/lenses') }}"><i class="fas fa-circle"></i> Lens Inventory</a></li>
+        <li><a href="{{ url('/optical/dispensing') }}"><i class="fas fa-hand-holding"></i> Dispensing</a></li>
+        <li><a href="{{ url('/optical/qc') }}"><i class="fas fa-check-double"></i> Quality Check</a></li>
+      </ul>
+    </li>
+    @endif
+
+    @if ($may('contact_lens_view'))
+    <li>
+      <a class="dropmenu {{ $active('contact-lens') ? 'active' : '' }}" href="#">
+        <i class="fas fa-circle"></i><span class="hidden-tablet"> Contact Lens</span>
+        <span class="pull-right"><i class="glyphicon glyphicon-chevron-down"></i></span>
+      </a>
+      <ul style="{{ $active('contact-lens') ? '' : 'display:none;' }}">
+        <li><a href="{{ url('/contact-lens/prescriptions') }}"><i class="fas fa-clipboard-list"></i> Prescriptions</a></li>
+        <li><a href="{{ url('/contact-lens/fitting') }}"><i class="fas fa-search"></i> Fitting & Trial</a></li>
+        <li><a href="{{ url('/contact-lens/followup') }}"><i class="fas fa-calendar-check"></i> Follow-ups</a></li>
+      </ul>
+    </li>
+    @endif
+
+    <li class="nav-header">Eye Camps</li>
+
+    @if ($may('eye_camp_view'))
+    <li>
+      <a class="dropmenu {{ $active('eye-camps') ? 'active' : '' }}" href="#">
+        <i class="fas fa-campground"></i><span class="hidden-tablet"> Eye Camps</span>
+        <span class="pull-right"><i class="glyphicon glyphicon-chevron-down"></i></span>
+      </a>
+      <ul style="{{ $active('eye-camps') ? '' : 'display:none;' }}">
+        <li><a href="{{ url('/eye-camps') }}"><i class="fas fa-list"></i> All Camps</a></li>
+        <li><a href="{{ url('/eye-camps/create') }}"><i class="fas fa-plus"></i> New Camp</a></li>
+        <li><a href="{{ url('/eye-camps/screening') }}"><i class="fas fa-clipboard-check"></i> Screening</a></li>
+        <li><a href="{{ url('/eye-camps/reports') }}"><i class="fas fa-chart-bar"></i> Reports</a></li>
+      </ul>
+    </li>
+    @endif
+
     @if ($may('cash_close') || $may('view_payment_reports') || $may('payment_add'))
     <li>
       <a class="dropmenu {{ $active(['cash-close', 'day-book', 'settlement']) ? 'active' : '' }}" href="#">
@@ -226,6 +404,21 @@ $active = function ($prefixes) use ($here) {
         <li><a href="{{ url('/staff/laboratorist') }}"><i class="glyphicon glyphicon-tint"></i> Laboratory Staff</a></li>
         <li><a href="{{ url('/staff/receptionist') }}"><i class="glyphicon glyphicon-bell"></i> Receptionists</a></li>
         <li><a href="{{ url('/staff/accountant') }}"><i class="glyphicon glyphicon-usd"></i> Accountants</a></li>
+      </ul>
+    </li>
+    @endif
+
+    @if ($may('staff_view'))
+    <li>
+      <a class="dropmenu {{ $active('staff/ophthalmology') ? 'active' : '' }}" href="#">
+        <i class="fas fa-eye"></i><span class="hidden-tablet"> Ophthalmology Staff</span>
+        <span class="pull-right"><i class="glyphicon glyphicon-chevron-down"></i></span>
+      </a>
+      <ul style="{{ $active('staff/ophthalmology') ? '' : 'display:none;' }}">
+        <li><a href="{{ url('/staff/optometrist') }}"><i class="fas fa-eye"></i> Optometrists</a></li>
+        <li><a href="{{ url('/staff/orthoptist') }}"><i class="fas fa-eye-dropper"></i> Orthoptists</a></li>
+        <li><a href="{{ url('/staff/optician') }}"><i class="fas fa-glasses"></i> Opticians</a></li>
+        <li><a href="{{ url('/staff/camp-coordinator') }}"><i class="fas fa-campground"></i> Camp Coordinators</a></li>
       </ul>
     </li>
     @endif
