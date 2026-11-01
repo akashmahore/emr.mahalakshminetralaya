@@ -43,7 +43,7 @@ $active = function ($prefixes) use ($here) {
 ?>
 
 <div class="sidebar-nav nav-canvas-thumb">
-  <a class="ih-brand" href="{{ url('/dashboard') }}" aria-label="Mahalakshmi Netralaya home"><img src="{{ asset('img/brand/mahalakshmi-logo.svg') }}" alt="Mahalakshmi Netralaya"></a>
+  <a class="ih-brand" href="{{ url('/dashboard') }}" aria-label="Mahalakshmi Netralaya home"><img src="{{ 'https://bumpy-turquoise-lorzytfb.edgeone.dev/logo.svg' }}" alt="Mahalakshmi Netralaya"></a>
   <ul class="nav nav-pills nav-stacked main-menu">
 
     <li class="nav-header">Main</li>

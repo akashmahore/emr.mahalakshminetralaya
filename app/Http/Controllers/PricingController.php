@@ -7,7 +7,7 @@
  * chores a billing office actually does with a price list: copy one company's list
  * to start a new one, put a whole list up or down by a percentage, and download it.
  *
- * Copyright (c) ICT Innovations <https://www.ictinnovations.com>
+ * Copyright (c) Mahalakshmi Netralaya <https://www.ictinnovations.com>
  * Part of ICTHospital <https://www.icthospital.com>
  * Licensed under the GNU General Public License v3.0.
  */

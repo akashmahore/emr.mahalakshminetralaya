@@ -9,7 +9,7 @@
  * The grant table is read once per request and held in memory. A page with a dozen
  * gated menu entries on it would otherwise run a dozen identical queries.
  *
- * Copyright (c) ICT Innovations <https://www.ictinnovations.com>
+ * Copyright (c) Mahalakshmi Netralaya <https://www.ictinnovations.com>
  * Part of ICTHospital <https://www.icthospital.com>
  * Licensed under the GNU General Public License v3.0.
  */

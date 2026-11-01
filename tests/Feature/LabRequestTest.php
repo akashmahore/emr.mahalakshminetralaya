@@ -5,7 +5,7 @@
  * The derived status and the part reported state are the reason the module was
  * built this way, so most of these check those.
  *
- * Copyright (c) ICT Innovations <https://www.ictinnovations.com>
+ * Copyright (c) Mahalakshmi Netralaya <https://www.ictinnovations.com>
  * Part of ICTHospital <https://www.icthospital.com>
  * Licensed under the GNU General Public License v3.0.
  */

@@ -8,7 +8,7 @@
  * Read the report before applying. Anything marked "skip" needs the data cleaning
  * up first, and the reason says what is wrong with it.
  *
- * Copyright (c) ICT Innovations <https://www.ictinnovations.com>
+ * Copyright (c) Mahalakshmi Netralaya <https://www.ictinnovations.com>
  * Part of ICTHospital <https://www.icthospital.com>
  * Licensed under the GNU General Public License v3.0.
  */

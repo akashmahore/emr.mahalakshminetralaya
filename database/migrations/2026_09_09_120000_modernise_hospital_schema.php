@@ -8,7 +8,7 @@
  * information, so this is safe to run on an existing install as well as a fresh
  * one. Run `php artisan hospital:modernise-schema` beforehand to see the report.
  *
- * Copyright (c) ICT Innovations <https://www.ictinnovations.com>
+ * Copyright (c) Mahalakshmi Netralaya <https://www.ictinnovations.com>
  * Part of ICTHospital <https://www.icthospital.com>
  * Licensed under the GNU General Public License v3.0.
  */

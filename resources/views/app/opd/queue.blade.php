@@ -1,7 +1,7 @@
 {{--
   ICTHospital - OPD token queue for a day: check in, call in, done, bill the visit.
 
-  Copyright (c) ICT Innovations <https://www.ictinnovations.com>
+  Copyright (c) Mahalakshmi Netralaya <https://www.ictinnovations.com>
   Part of ICTHospital <https://www.icthospital.com>
   Licensed under the GNU General Public License v3.0.
 --}}

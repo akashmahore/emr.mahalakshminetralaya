@@ -8,7 +8,7 @@
  * forms create or update the login through this class, so an admin can hand over a
  * username and password as soon as the person is added.
  *
- * Copyright (c) ICT Innovations <https://www.ictinnovations.com>
+ * Copyright (c) Mahalakshmi Netralaya <https://www.ictinnovations.com>
  * Part of ICTHospital <https://www.icthospital.com>
  * Licensed under the GNU General Public License v3.0.
  */

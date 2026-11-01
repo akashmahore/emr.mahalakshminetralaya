@@ -4,7 +4,7 @@
   Stands alone, without the app layout, so it prints on a card or label printer
   with nothing else on the page.
 
-  Copyright (c) ICT Innovations <https://www.ictinnovations.com>
+  Copyright (c) Mahalakshmi Netralaya <https://www.ictinnovations.com>
   Part of ICTHospital <https://www.icthospital.com>
   Licensed under the GNU General Public License v3.0.
 --}}

@@ -7,7 +7,7 @@
  * moves house. And a gateway secret is never rendered back into the page, because a
  * settings screen that prints an API password puts it in every browser cache.
  *
- * Copyright (c) ICT Innovations <https://www.ictinnovations.com>
+ * Copyright (c) Mahalakshmi Netralaya <https://www.ictinnovations.com>
  * Part of ICTHospital <https://www.icthospital.com>
  * Licensed under the GNU General Public License v3.0.
  */

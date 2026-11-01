@@ -10,7 +10,7 @@
  * hold two appointments that overlap. The CodeIgniter version booked whatever it
  * was given and left the clash for the front desk to discover on the day.
  *
- * Copyright (c) ICT Innovations <https://www.ictinnovations.com>
+ * Copyright (c) Mahalakshmi Netralaya <https://www.ictinnovations.com>
  * Part of ICTHospital <https://www.icthospital.com>
  * Licensed under the GNU General Public License v3.0.
  */

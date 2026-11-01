@@ -12,7 +12,7 @@
  * what a patient was billed. Same reasoning as the lab and medicine catalogues,
  * and there is a test for it.
  *
- * Copyright (c) ICT Innovations <https://www.ictinnovations.com>
+ * Copyright (c) Mahalakshmi Netralaya <https://www.ictinnovations.com>
  * Part of ICTHospital <https://www.icthospital.com>
  * Licensed under the GNU General Public License v3.0.
  */

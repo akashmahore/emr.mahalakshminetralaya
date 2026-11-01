@@ -4,7 +4,7 @@
   The drug filter is the query the legacy free text column made impossible, so it
   is on the screen rather than buried.
 
-  Copyright (c) ICT Innovations <https://www.ictinnovations.com>
+  Copyright (c) Mahalakshmi Netralaya <https://www.ictinnovations.com>
   Part of ICTHospital <https://www.icthospital.com>
   Licensed under the GNU General Public License v3.0.
 --}}

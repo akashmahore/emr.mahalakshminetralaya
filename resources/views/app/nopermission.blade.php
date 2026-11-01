@@ -4,7 +4,7 @@
   The middleware used to redirect to a route that did not exist, so the user got a
   404 and no idea why. This says which right is missing and who can grant it.
 
-  Copyright (c) ICT Innovations <https://www.ictinnovations.com>
+  Copyright (c) Mahalakshmi Netralaya <https://www.ictinnovations.com>
   Part of ICTHospital <https://www.icthospital.com>
   Licensed under the GNU General Public License v3.0.
 --}}

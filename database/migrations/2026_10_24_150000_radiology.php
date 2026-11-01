@@ -6,7 +6,7 @@
  * modality and the radiologist's findings are written on the order itself, so a
  * report reads the same after the catalogue changes.
  *
- * Copyright (c) ICT Innovations <https://www.ictinnovations.com>
+ * Copyright (c) Mahalakshmi Netralaya <https://www.ictinnovations.com>
  * Part of ICTHospital <https://www.icthospital.com>
  * Licensed under the GNU General Public License v3.0.
  */

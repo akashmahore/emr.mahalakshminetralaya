@@ -12,7 +12,7 @@
  * is kept and filled with a readable summary, so anything still reading it keeps
  * working and old rows are not stranded.
  *
- * Copyright (c) ICT Innovations <https://www.ictinnovations.com>
+ * Copyright (c) Mahalakshmi Netralaya <https://www.ictinnovations.com>
  * Part of ICTHospital <https://www.icthospital.com>
  * Licensed under the GNU General Public License v3.0.
  */

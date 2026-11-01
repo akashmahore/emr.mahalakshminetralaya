@@ -9,7 +9,7 @@
  * run hospital:modernise-schema accepts it, so the failure only appears on a
  * fresh deployment or in CI.
  *
- * Copyright (c) ICT Innovations <https://www.ictinnovations.com>
+ * Copyright (c) Mahalakshmi Netralaya <https://www.ictinnovations.com>
  * Part of ICTHospital <https://www.icthospital.com>
  * Licensed under the GNU General Public License v3.0.
  */

@@ -7,7 +7,7 @@
  * nothing whenever "All doctors" or "Any status" was left selected (found on the demo,
  * 22 October 2026). Each list must treat a blank field as "all".
  *
- * Copyright (c) ICT Innovations <https://www.ictinnovations.com>
+ * Copyright (c) Mahalakshmi Netralaya <https://www.ictinnovations.com>
  * Part of ICTHospital <https://www.icthospital.com>
  * Licensed under the GNU General Public License v3.0.
  */

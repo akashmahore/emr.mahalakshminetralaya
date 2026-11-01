@@ -14,7 +14,7 @@
  * settings page that prints an API password into the HTML puts it in every browser
  * cache and every screenshot. Leaving a secret field blank keeps the stored value.
  *
- * Copyright (c) ICT Innovations <https://www.ictinnovations.com>
+ * Copyright (c) Mahalakshmi Netralaya <https://www.ictinnovations.com>
  * Part of ICTHospital <https://www.icthospital.com>
  * Licensed under the GNU General Public License v3.0.
  */

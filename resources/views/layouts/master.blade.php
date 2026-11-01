@@ -81,9 +81,9 @@ window.addEventListener('keydown',function(e){if(e.keyIdentifier=='U+000A'||e.ke
     
 
 
-    <link rel="icon" href="{{ asset('favicon.ico') }}" sizes="any">
-    <link rel="icon" type="image/svg+xml" href="{{ asset('img/brand/mahalakshmi-mark.svg') }}">
-    <link rel="apple-touch-icon" href="{{ asset('img/brand/favicon-180.png') }}">
+    <link rel="icon" href="{{ 'https://bumpy-turquoise-lorzytfb.edgeone.dev/favicon.ico' }}" sizes="any">
+    <link rel="icon" type="image/svg+xml" href="{{ 'https://bumpy-turquoise-lorzytfb.edgeone.dev/mark.svg' }}">
+    <link rel="apple-touch-icon" href="{{ 'https://bumpy-turquoise-lorzytfb.edgeone.dev/favicon-180.png' }}">
     {{--<link href='//cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/css/bootstrap-select.min.css' rel='stylesheet'>--}}
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.min.css">
 
@@ -401,7 +401,7 @@ table i {
 
                                 <a class="js-arrow" href="#">
                                     @if(Session::get('inName')=='' || Session::get('inName')=='Mahalakshmi Netralaya')
-                                    <img src="{{ asset('img/brand/mahalakshmi-logo.svg') }}" alt="Mahalakshmi Netralaya" style="height:34px" />
+                                    <img src="{{ 'https://bumpy-turquoise-lorzytfb.edgeone.dev/logo.svg' }}" alt="Mahalakshmi Netralaya" style="height:34px" />
                                     @else
                                       <h2>{{Session::get('inName')}}</h2>
                                     @endif
@@ -686,7 +686,7 @@ table i {
                                 <div class="copyright">
                                    <p class="col-md-9 col-sm-9 col-xs-12 copyright"> <a href="#" target="_blank">Mahalakshmi Netralaya</a> &copy;<?php echo date("Y");?></p>
                                     <p class="col-md-3 col-sm-3 col-xs-12 powered-by">Developed by:
-                                    <a href="https://www.ictinnovations.com/" target="_blank" rel="noopener">ICT Innovations</a></p>
+                                    <a href="#" target="_blank" rel="noopener">Mahalakshmi Netralaya</a></p>
                                 </div>
                             </div>
                         </div>

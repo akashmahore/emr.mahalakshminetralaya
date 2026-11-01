@@ -14,7 +14,7 @@
  * `permission` is the prefix in config/hospital_permissions.php. The catalogue has a
  * dedicated Nurse set and a general Staff set, which is why nurse differs.
  *
- * Copyright (c) ICT Innovations <https://www.ictinnovations.com>
+ * Copyright (c) Mahalakshmi Netralaya <https://www.ictinnovations.com>
  * Part of ICTHospital <https://www.icthospital.com>
  * Licensed under the GNU General Public License v3.0.
  */

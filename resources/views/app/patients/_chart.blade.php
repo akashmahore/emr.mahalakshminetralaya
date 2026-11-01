@@ -5,7 +5,7 @@
   that owns it: history notes, OPD visits with vitals, prescriptions, lab results,
   ward stays and billing. Each section links to that module for adding or editing.
 
-  Copyright (c) ICT Innovations <https://www.ictinnovations.com>
+  Copyright (c) Mahalakshmi Netralaya <https://www.ictinnovations.com>
   Part of ICTHospital <https://www.icthospital.com>
   Licensed under the GNU General Public License v3.0.
 --}}

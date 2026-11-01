@@ -9,7 +9,7 @@
  * clinic needs. Structured sections are JSON, because each specialty has its own
  * fields and most visits fill only a few of them.
  *
- * Copyright (c) ICT Innovations <https://www.ictinnovations.com>
+ * Copyright (c) Mahalakshmi Netralaya <https://www.ictinnovations.com>
  * Part of ICTHospital <https://www.icthospital.com>
  * Licensed under the GNU General Public License v3.0.
  */

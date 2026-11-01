@@ -7,7 +7,7 @@
  * close, split by how it was paid. A payment belongs to exactly one close, so money
  * cannot be counted twice or slip between two shifts.
  *
- * Copyright (c) ICT Innovations <https://www.ictinnovations.com>
+ * Copyright (c) Mahalakshmi Netralaya <https://www.ictinnovations.com>
  * Part of ICTHospital <https://www.icthospital.com>
  * Licensed under the GNU General Public License v3.0.
  */

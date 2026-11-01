@@ -3,7 +3,7 @@
  * ICTHospital - outpatient department: token queue, walk-ins, visit fees, OPD
  * history, doctor booking slots.
  *
- * Copyright (c) ICT Innovations <https://www.ictinnovations.com>
+ * Copyright (c) Mahalakshmi Netralaya <https://www.ictinnovations.com>
  * Part of ICTHospital <https://www.icthospital.com>
  * Licensed under the GNU General Public License v3.0.
  */

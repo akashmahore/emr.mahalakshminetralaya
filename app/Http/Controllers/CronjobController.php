@@ -11,7 +11,7 @@
  * unconfigured ICTCore integration returns a described "skipped" result rather
  * than a 500, because this runs unattended from cron.
  *
- * Copyright (c) ICT Innovations <https://www.ictinnovations.com>
+ * Copyright (c) Mahalakshmi Netralaya <https://www.ictinnovations.com>
  * Part of ICTHospital <https://www.icthospital.com>
  * Licensed under the GNU General Public License v3.0.
  */

@@ -16,7 +16,7 @@
  *   php artisan hospital:sync-permissions --prune      also drop keys not in the catalogue
  *   php artisan hospital:sync-permissions --dry-run    report and change nothing
  *
- * Copyright (c) ICT Innovations <https://www.ictinnovations.com>
+ * Copyright (c) Mahalakshmi Netralaya <https://www.ictinnovations.com>
  * Part of ICTHospital <https://www.icthospital.com>
  * Licensed under the GNU General Public License v3.0.
  */

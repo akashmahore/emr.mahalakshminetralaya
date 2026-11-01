@@ -12,7 +12,7 @@
  * no way to express "has not been discharged" other than an empty string, which
  * is exactly the ambiguity this replaces.
  *
- * Copyright (c) ICT Innovations <https://www.ictinnovations.com>
+ * Copyright (c) Mahalakshmi Netralaya <https://www.ictinnovations.com>
  * Part of ICTHospital <https://www.icthospital.com>
  * Licensed under the GNU General Public License v3.0.
  */

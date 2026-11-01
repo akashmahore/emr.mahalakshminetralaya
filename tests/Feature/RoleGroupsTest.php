@@ -6,7 +6,7 @@
  * column in the permission grid, so those users could never be given any access.
  * Roles now come from config/hospital_permissions.php, which includes the front desk.
  *
- * Copyright (c) ICT Innovations <https://www.ictinnovations.com>
+ * Copyright (c) Mahalakshmi Netralaya <https://www.ictinnovations.com>
  * Part of ICTHospital <https://www.icthospital.com>
  * Licensed under the GNU General Public License v3.0.
  */

@@ -13,7 +13,7 @@
  * into underscores, so changing a label changes the stored key. Add to the end of
  * the list rather than reordering it if you already have permissions saved.
  *
- * Copyright (c) ICT Innovations <https://www.ictinnovations.com>
+ * Copyright (c) Mahalakshmi Netralaya <https://www.ictinnovations.com>
  * Part of ICTHospital <https://www.icthospital.com>
  * Licensed under the GNU General Public License v3.0.
  */

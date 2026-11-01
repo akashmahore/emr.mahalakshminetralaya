@@ -5,7 +5,7 @@
  * Stock movement is the reason this module exists rather than a form that writes
  * a row, so that is what most of these check.
  *
- * Copyright (c) ICT Innovations <https://www.ictinnovations.com>
+ * Copyright (c) Mahalakshmi Netralaya <https://www.ictinnovations.com>
  * Part of ICTHospital <https://www.icthospital.com>
  * Licensed under the GNU General Public License v3.0.
  */

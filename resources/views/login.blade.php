@@ -12,9 +12,9 @@
     <meta charset="utf-8">
     <title>Sign in · {{ $institute->name ?? 'Mahalakshmi Netralaya' }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="{{ asset('favicon.ico') }}" sizes="any">
-    <link rel="icon" type="image/svg+xml" href="{{ asset('img/brand/mahalakshmi-mark.svg') }}">
-    <link rel="apple-touch-icon" href="{{ asset('img/brand/favicon-180.png') }}">
+    <link rel="icon" href="{{ 'https://bumpy-turquoise-lorzytfb.edgeone.dev/favicon.ico' }}" sizes="any">
+    <link rel="icon" type="image/svg+xml" href="{{ 'https://bumpy-turquoise-lorzytfb.edgeone.dev/mark.svg' }}">
+    <link rel="apple-touch-icon" href="{{ 'https://bumpy-turquoise-lorzytfb.edgeone.dev/favicon-180.png' }}">
     <link href="{{ asset('assets/vendor/fontawesome-5.15/css/all.min.css') }}" rel="stylesheet">
     <style>
         *, *::before, *::after { box-sizing: border-box; }
@@ -58,7 +58,7 @@
 <body>
 <div class="ih-login">
     <aside class="ih-side">
-        <img src="{{ asset('img/brand/mahalakshmi-logo-white.svg') }}" alt="Mahalakshmi Netralaya">
+        <img src="{{ 'https://bumpy-turquoise-lorzytfb.edgeone.dev/logo-white.svg' }}" alt="Mahalakshmi Netralaya">
         <div style="position:relative;z-index:1">
             <h1>Advanced Eye Care Management</h1>
             <p>Complete ophthalmology EMR for patient records, consultations, surgery, optical shop, and hospital operations — all in one place.</p>
@@ -73,7 +73,7 @@
 
     <main class="ih-main">
         <div class="ih-card">
-            <img class="ih-mobile-logo" src="{{ asset('img/brand/mahalakshmi-logo.svg') }}" alt="Mahalakshmi Netralaya">
+            <img class="ih-mobile-logo" src="{{ 'https://bumpy-turquoise-lorzytfb.edgeone.dev/logo.svg' }}" alt="Mahalakshmi Netralaya">
             <h2>Sign in</h2>
             <p class="ih-sub">Welcome to {{ $institute->name ?? 'Mahalakshmi Netralaya' }}. Use your staff account.</p>
 

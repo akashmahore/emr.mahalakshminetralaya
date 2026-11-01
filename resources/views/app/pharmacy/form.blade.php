@@ -4,7 +4,7 @@
   Arriving from a prescription pre-loads its drugs, which is the common case at a
   hospital counter: somebody turns up holding one.
 
-  Copyright (c) ICT Innovations <https://www.ictinnovations.com>
+  Copyright (c) Mahalakshmi Netralaya <https://www.ictinnovations.com>
   Part of ICTHospital <https://www.icthospital.com>
   Licensed under the GNU General Public License v3.0.
 --}}

@@ -15,7 +15,7 @@
  * add_date is included for the same reason. It is stamped by the controller
  * today, but nothing should force a date column to hold a value it does not have.
  *
- * Copyright (c) ICT Innovations <https://www.ictinnovations.com>
+ * Copyright (c) Mahalakshmi Netralaya <https://www.ictinnovations.com>
  * Part of ICTHospital <https://www.icthospital.com>
  * Licensed under the GNU General Public License v3.0.
  */

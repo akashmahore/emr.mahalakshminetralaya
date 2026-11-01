@@ -10,7 +10,7 @@
  * Shares already approved or paid are never recalculated, so a later change to a
  * policy cannot alter money that has been signed off.
  *
- * Copyright (c) ICT Innovations <https://www.ictinnovations.com>
+ * Copyright (c) Mahalakshmi Netralaya <https://www.ictinnovations.com>
  * Part of ICTHospital <https://www.icthospital.com>
  * Licensed under the GNU General Public License v3.0.
  */

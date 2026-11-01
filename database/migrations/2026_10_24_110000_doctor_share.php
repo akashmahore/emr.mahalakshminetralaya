@@ -12,7 +12,7 @@
  * doctor is owed is a list of lines that can be approved and paid, not a sum
  * somebody works out at the end of the month.
  *
- * Copyright (c) ICT Innovations <https://www.ictinnovations.com>
+ * Copyright (c) Mahalakshmi Netralaya <https://www.ictinnovations.com>
  * Part of ICTHospital <https://www.icthospital.com>
  * Licensed under the GNU General Public License v3.0.
  */

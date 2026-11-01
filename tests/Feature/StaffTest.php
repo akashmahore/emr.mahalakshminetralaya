@@ -6,7 +6,7 @@
  * them rather than trusting that what works for nurses works for accountants. The
  * tables differ: only nurse has a z column, and receptionist and accountant have no y.
  *
- * Copyright (c) ICT Innovations <https://www.ictinnovations.com>
+ * Copyright (c) Mahalakshmi Netralaya <https://www.ictinnovations.com>
  * Part of ICTHospital <https://www.icthospital.com>
  * Licensed under the GNU General Public License v3.0.
  */

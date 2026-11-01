@@ -6,7 +6,7 @@
  * clinical record of what was written on a given day, so it has to stay readable
  * even if the drug is renamed or dropped from the catalogue afterwards.
  *
- * Copyright (c) ICT Innovations <https://www.ictinnovations.com>
+ * Copyright (c) Mahalakshmi Netralaya <https://www.ictinnovations.com>
  * Part of ICTHospital <https://www.icthospital.com>
  * Licensed under the GNU General Public License v3.0.
  */

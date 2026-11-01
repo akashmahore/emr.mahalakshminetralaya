@@ -5,7 +5,7 @@
  * appointment.patient and appointment.doctor hold row ids. The recent appointments
  * box used to print those ids, so a front desk saw "5" and "2" instead of names.
  *
- * Copyright (c) ICT Innovations <https://www.ictinnovations.com>
+ * Copyright (c) Mahalakshmi Netralaya <https://www.ictinnovations.com>
  * Part of ICTHospital <https://www.icthospital.com>
  * Licensed under the GNU General Public License v3.0.
  */

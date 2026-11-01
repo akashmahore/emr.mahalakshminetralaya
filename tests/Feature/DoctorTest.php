@@ -6,7 +6,7 @@
  * first test is the one that would have failed before: adding a doctor with
  * nothing filled in but a name, on a database built from migrations alone.
  *
- * Copyright (c) ICT Innovations <https://www.ictinnovations.com>
+ * Copyright (c) Mahalakshmi Netralaya <https://www.ictinnovations.com>
  * Part of ICTHospital <https://www.icthospital.com>
  * Licensed under the GNU General Public License v3.0.
  */

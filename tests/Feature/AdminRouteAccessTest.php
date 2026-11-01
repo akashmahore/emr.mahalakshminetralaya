@@ -8,7 +8,7 @@
  * tests hold every one of them shut for anonymous visitors and for signed-in
  * staff who are not Admin, and check that an Admin can still use them.
  *
- * Copyright (c) ICT Innovations <https://www.ictinnovations.com>
+ * Copyright (c) Mahalakshmi Netralaya <https://www.ictinnovations.com>
  * Part of ICTHospital <https://www.icthospital.com>
  * Licensed under the GNU General Public License v3.0.
  */

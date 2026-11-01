@@ -6,7 +6,7 @@
  * anyone holding the link. New uploads go to the private disk; this moves the old ones
  * across so they open only through /history/{id}/attachment. Safe to run more than once.
  *
- * Copyright (c) ICT Innovations <https://www.ictinnovations.com>
+ * Copyright (c) Mahalakshmi Netralaya <https://www.ictinnovations.com>
  * Part of ICTHospital <https://www.icthospital.com>
  * Licensed under the GNU General Public License v3.0.
  */

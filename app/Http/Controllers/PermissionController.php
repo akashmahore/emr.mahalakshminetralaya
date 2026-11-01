@@ -6,7 +6,7 @@
  * controller and the checkbox grid can never drift out of order. The school
  * catalogue this replaces granted rights over students, classes, exams and fees.
  *
- * Copyright (c) ICT Innovations <https://www.ictinnovations.com>
+ * Copyright (c) Mahalakshmi Netralaya <https://www.ictinnovations.com>
  * Part of ICTHospital <https://www.icthospital.com>
  * Licensed under the GNU General Public License v3.0.
  */

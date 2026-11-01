@@ -11,7 +11,7 @@
  * the same transaction, so the stock figure is a consequence of what was handed
  * over rather than an independent guess.
  *
- * Copyright (c) ICT Innovations <https://www.ictinnovations.com>
+ * Copyright (c) Mahalakshmi Netralaya <https://www.ictinnovations.com>
  * Part of ICTHospital <https://www.icthospital.com>
  * Licensed under the GNU General Public License v3.0.
  */

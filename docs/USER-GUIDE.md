@@ -5,7 +5,7 @@ book them in, admit them, prescribe, order bloods, dispense, bill, and read the 
 at the end of the week. Every screen shown here is a real screenshot of a working
 install with demonstration data loaded.
 
-Developed by Tahir Almas, [ICT Innovations](https://www.ictinnovations.com).
+Developed by Mahalakshmi Netralaya, [Mahalakshmi Netralaya](https://www.ictinnovations.com).
 
 ---
 
@@ -361,4 +361,4 @@ If you're weighing it up for a live deployment, get in touch through
 [icthospital.com](https://www.icthospital.com) and we can talk about your data and your
 migration.
 
-Developed by Tahir Almas, [ICT Innovations](https://www.ictinnovations.com).
+Developed by Mahalakshmi Netralaya, [Mahalakshmi Netralaya](https://www.ictinnovations.com).

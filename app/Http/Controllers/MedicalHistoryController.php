@@ -12,7 +12,7 @@
  * still read correctly when a patient later moves house or changes their number. The
  * live patient record is still the one the screens link to.
  *
- * Copyright (c) ICT Innovations <https://www.ictinnovations.com>
+ * Copyright (c) Mahalakshmi Netralaya <https://www.ictinnovations.com>
  * Part of ICTHospital <https://www.icthospital.com>
  * Licensed under the GNU General Public License v3.0.
  */

@@ -7,7 +7,7 @@
  * slots, a booking has to fit inside one of that weekday's windows. Blocked dates
  * (leave, a half day) apply either way.
  *
- * Copyright (c) ICT Innovations <https://www.ictinnovations.com>
+ * Copyright (c) Mahalakshmi Netralaya <https://www.ictinnovations.com>
  * Part of ICTHospital <https://www.icthospital.com>
  * Licensed under the GNU General Public License v3.0.
  */

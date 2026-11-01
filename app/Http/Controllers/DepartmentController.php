@@ -12,7 +12,7 @@
  * and export in the wild reads it that way, so renaming here offers to carry the
  * doctors across instead of silently orphaning them.
  *
- * Copyright (c) ICT Innovations <https://www.ictinnovations.com>
+ * Copyright (c) Mahalakshmi Netralaya <https://www.ictinnovations.com>
  * Part of ICTHospital <https://www.icthospital.com>
  * Licensed under the GNU General Public License v3.0.
  */

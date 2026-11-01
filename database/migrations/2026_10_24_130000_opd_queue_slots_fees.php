@@ -11,7 +11,7 @@
  * hours or on a day the doctor is away. Visit fees say what a first visit, a
  * follow-up or an emergency visit costs with each doctor.
  *
- * Copyright (c) ICT Innovations <https://www.ictinnovations.com>
+ * Copyright (c) Mahalakshmi Netralaya <https://www.ictinnovations.com>
  * Part of ICTHospital <https://www.icthospital.com>
  * Licensed under the GNU General Public License v3.0.
  */

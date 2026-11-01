@@ -8,7 +8,7 @@
  * point that the rest of the clinical modules hang off, since admissions,
  * prescriptions, lab requests and invoices all key on a patient row.
  *
- * Copyright (c) ICT Innovations <https://www.ictinnovations.com>
+ * Copyright (c) Mahalakshmi Netralaya <https://www.ictinnovations.com>
  * Part of ICTHospital <https://www.icthospital.com>
  * Licensed under the GNU General Public License v3.0.
  */

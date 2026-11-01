@@ -8,7 +8,7 @@
  * patient's previous consultation, because a doctor should not have to ask a known
  * diabetic whether they are diabetic at every visit.
  *
- * Copyright (c) ICT Innovations <https://www.ictinnovations.com>
+ * Copyright (c) Mahalakshmi Netralaya <https://www.ictinnovations.com>
  * Part of ICTHospital <https://www.icthospital.com>
  * Licensed under the GNU General Public License v3.0.
  */

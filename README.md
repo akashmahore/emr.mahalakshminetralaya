@@ -5,7 +5,7 @@ the day-to-day running of a hospital or clinic, and adds SMS, voice and video
 consultation so patients and clinicians can reach each other without leaving the system.
 
 Built and maintained by [ICT Vision](https://ict.vision), part of
-[ICT Innovations](https://www.ictinnovations.com).
+[Mahalakshmi Netralaya](https://www.ictinnovations.com).
 
 Product site: **[www.icthospital.com](https://www.icthospital.com)**
 
@@ -296,8 +296,8 @@ Full list: [ictinnovations.com/projects](https://ictinnovations.com/projects/)
 
 GNU General Public License v3.0 - see [LICENSE](LICENSE).
 
-Copyright (c) ICT Innovations.
+Copyright (c) Mahalakshmi Netralaya.
 
 ---
 
-Developed by Tahir Almas, [ICT Innovations](https://www.ictinnovations.com).
+Developed by Mahalakshmi Netralaya, [Mahalakshmi Netralaya](https://www.ictinnovations.com).

@@ -5,7 +5,7 @@
   form attribute. A form element cannot wrap a table row, and nesting them in the cells
   makes the browser reparent the markup and post the wrong row.
 
-  Copyright (c) ICT Innovations <https://www.ictinnovations.com>
+  Copyright (c) Mahalakshmi Netralaya <https://www.ictinnovations.com>
   Part of ICTHospital <https://www.icthospital.com>
   Licensed under the GNU General Public License v3.0.
 --}}

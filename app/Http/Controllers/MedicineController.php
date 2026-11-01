@@ -6,7 +6,7 @@
  * without a way to put anything in it. Stock movement and dispensing are the
  * pharmacy module's job; this is only the catalogue and the quantity on hand.
  *
- * Copyright (c) ICT Innovations <https://www.ictinnovations.com>
+ * Copyright (c) Mahalakshmi Netralaya <https://www.ictinnovations.com>
  * Part of ICTHospital <https://www.icthospital.com>
  * Licensed under the GNU General Public License v3.0.
  */

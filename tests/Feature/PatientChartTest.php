@@ -7,7 +7,7 @@
  * through its own module's route, as staff would, then check the chart shows it, adds
  * up the money correctly, and never shows another patient's records.
  *
- * Copyright (c) ICT Innovations <https://www.ictinnovations.com>
+ * Copyright (c) Mahalakshmi Netralaya <https://www.ictinnovations.com>
  * Part of ICTHospital <https://www.icthospital.com>
  * Licensed under the GNU General Public License v3.0.
  */

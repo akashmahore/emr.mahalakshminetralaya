@@ -4,7 +4,7 @@
   Secrets are never rendered back. Each one shows as set or not set, and leaving a
   field blank on save keeps whatever is stored.
 
-  Copyright (c) ICT Innovations <https://www.ictinnovations.com>
+  Copyright (c) Mahalakshmi Netralaya <https://www.ictinnovations.com>
   Part of ICTHospital <https://www.icthospital.com>
   Licensed under the GNU General Public License v3.0.
 --}}
