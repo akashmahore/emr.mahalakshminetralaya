@@ -1,74 +1,58 @@
 <?php
 /**
- * ICTHospital - the staff types that share one screen.
+ * Mahalakshmi Netralaya - the staff types that share one screen.
  *
- * nurse, pharmacist, laboratorist, receptionist and accountant are five tables with
- * the same shape: a name, contact details, a photo and the legacy ion_user_id. Five
- * near-identical controllers and ten near-identical views would drift apart the first
- * time a column was added to one of them, so one controller reads this map instead.
+ * nurse, pharmacist, optometrist, orthoptist, optician, camp_coordinator, receptionist 
+ * and pharmacy_staff are tables with the same shape: a name, contact details, a photo 
+ * and the legacy ion_user_id. One controller reads this map instead.
  *
  * Doctors are deliberately not here. They carry a department, a qualification and an
- * ICTCore procedure id, and other modules select from them, so they have their own
- * screen.
+ * procedure id, and other modules select from them, so they have their own screen.
  *
  * `permission` is the prefix in config/hospital_permissions.php. The catalogue has a
  * dedicated Nurse set and a general Staff set, which is why nurse differs.
  *
- * Copyright (c) Mahalakshmi Netralaya <https://www.ictinnovations.com>
- * Part of ICTHospital <https://www.icthospital.com>
+ * Copyright (c) Mahalakshmi Netralaya
+ * Part of Mahalakshmi Netralaya EMR
  * Licensed under the GNU General Public License v3.0.
  */
 
 return [
 
     'nurse' => [
-        // users.group for this type's logins (the permission column).
         'group' => 'Nurse',
         'model' => \App\Models\Nurse::class,
         'label' => 'Nurses',
         'singular' => 'nurse',
         'permission' => 'nurse',
-        'icon' => 'glyphicon-heart',
+        'icon' => 'fas fa-user-nurse',
     ],
 
     'pharmacist' => [
-        // users.group for this type's logins (the permission column).
         'group' => 'Pharmacist',
         'model' => \App\Models\Pharmacist::class,
         'label' => 'Pharmacists',
         'singular' => 'pharmacist',
         'permission' => 'staff',
-        'icon' => 'glyphicon-shopping-cart',
+        'icon' => 'fas fa-pills',
     ],
 
-    'laboratorist' => [
-        // users.group for this type's logins (the permission column).
-        'group' => 'Laboratorist',
-        'model' => \App\Models\Laboratorist::class,
-        'label' => 'Laboratory staff',
-        'singular' => 'laboratory technician',
+    'pharmacy_staff' => [
+        'group' => 'Pharmacy Staff',
+        'model' => \App\Models\Pharmacist::class,
+        'label' => 'Pharmacy Staff',
+        'singular' => 'pharmacy staff',
         'permission' => 'staff',
-        'icon' => 'glyphicon-tint',
+        'icon' => 'fas fa-prescription-bottle-alt',
     ],
 
     'receptionist' => [
-        // users.group for this type's logins (the permission column).
         'group' => 'Receptionist',
         'model' => \App\Models\Receptionist::class,
         'label' => 'Receptionists',
         'singular' => 'receptionist',
         'permission' => 'staff',
-        'icon' => 'glyphicon-bell',
-    ],
-
-    'accountant' => [
-        // users.group for this type's logins (the permission column).
-        'group' => 'Accountant',
-        'model' => \App\Models\Accountant::class,
-        'label' => 'Accountants',
-        'singular' => 'accountant',
-        'permission' => 'staff',
-        'icon' => 'glyphicon-usd',
+        'icon' => 'fas fa-user-clock',
     ],
 
     // Ophthalmology-specific staff
@@ -78,7 +62,7 @@ return [
         'label' => 'Optometrists',
         'singular' => 'optometrist',
         'permission' => 'staff',
-        'icon' => 'glyphicon-eye-open',
+        'icon' => 'fas fa-eye',
     ],
 
     'orthoptist' => [
@@ -87,7 +71,7 @@ return [
         'label' => 'Orthoptists',
         'singular' => 'orthoptist',
         'permission' => 'staff',
-        'icon' => 'glyphicon-eye-close',
+        'icon' => 'fas fa-eye-dropper',
     ],
 
     'optician' => [
@@ -96,7 +80,7 @@ return [
         'label' => 'Opticians',
         'singular' => 'optician',
         'permission' => 'staff',
-        'icon' => 'glyphicon-glass',
+        'icon' => 'fas fa-glasses',
     ],
 
     'camp_coordinator' => [
@@ -105,7 +89,7 @@ return [
         'label' => 'Camp Coordinators',
         'singular' => 'camp coordinator',
         'permission' => 'staff',
-        'icon' => 'glyphicon-tent',
+        'icon' => 'fas fa-campground',
     ],
 
 ];

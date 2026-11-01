@@ -35,6 +35,7 @@ class UserTableSeeder extends Seeder
         $this->hospital();
         $this->permissions();
         $this->notificationTypes();
+        $this->demoUsers();
     }
 
     /**
@@ -52,13 +53,58 @@ class UserTableSeeder extends Seeder
             'firstname' => 'Hospital',
             'lastname' => 'Administrator',
             'login' => 'admin',
-            'email' => 'admin@example.com',
+            'email' => 'admin@mahalakshminetralaya.com',
             'group' => 'Admin',
             'desc' => 'Default administrator created by the installer',
             'password' => Hash::make('123456'),
         ]);
 
         $this->command->warn('Created the admin account with the default password. Change it now.');
+    }
+
+    /**
+     * Demo users for each role - for testing and demonstration.
+     * In production, remove or modify these.
+     */
+    protected function demoUsers(): void
+    {
+        $demoPassword = 'Demo@2026';
+
+        $demoUsers = [
+            // Doctor
+            ['doctor', 'Dr. Rahul', 'Sharma', 'Doctor', 'rahul.sharma@mahalakshminetralaya.com'],
+            // Nurse
+            ['nurse', 'Priya', 'Patel', 'Nurse', 'priya.patel@mahalakshminetralaya.com'],
+            // Receptionist
+            ['reception', 'Front', 'Desk', 'Receptionist', 'frontdesk@mahalakshminetralaya.com'],
+            // Pharmacist
+            ['pharmacist', 'Amit', 'Kumar', 'Pharmacist', 'amit.kumar@mahalakshminetralaya.com'],
+            // Pharmacy Staff (for daily sales entry)
+            ['pharmacy', 'Medical', 'Store', 'Pharmacy Staff', 'pharmacy@mahalakshminetralaya.com'],
+            // Optometrist
+            ['optometrist', 'Dr. Priya', 'Nair', 'Optometrist', 'priya.nair@mahalakshminetralaya.com'],
+            // Optician
+            ['optician', 'Rajesh', 'Verma', 'Optician', 'rajesh.verma@mahalakshminetralaya.com'],
+            // Orthoptist
+            ['orthoptist', 'Dr. Meera', 'Iyer', 'Orthoptist', 'meera.iyer@mahalakshminetralaya.com'],
+            // Camp Coordinator
+            ['campcoord', 'Sanjay', 'Gupta', 'Camp Coordinator', 'sanjay.gupta@mahalakshminetralaya.com'],
+            // Accountant
+            ['accountant', 'Finance', 'Team', 'Accountant', 'finance@mahalakshminetralaya.com'],
+        ];
+
+        foreach ($demoUsers as [$login, $first, $last, $group, $email]) {
+            User::firstOrCreate(['login' => $login], [
+                'firstname' => $first,
+                'lastname' => $last,
+                'email' => $email,
+                'group' => $group,
+                'desc' => 'Demo user (' . strtolower($group) . ')',
+                'password' => Hash::make($demoPassword),
+            ]);
+        }
+
+        $this->command->info('Demo users created with password: ' . $demoPassword);
     }
 
     /**
@@ -74,10 +120,10 @@ class UserTableSeeder extends Seeder
         Institute::create([
             'name' => 'Mahalakshmi Netralaya',
             'establish' => date('Y'),
-            'email' => '',
-            'web' => '',
-            'phoneNo' => '',
-            'address' => '',
+            'email' => 'info@mahalakshminetralaya.com',
+            'web' => 'https://mahalakshminetralaya.com',
+            'phoneNo' => '+91-XXXX-XXXXXX',
+            'address' => 'Your Hospital Address Here',
         ]);
 
         $this->command->info('Hospital record created. Set your details in Settings.');

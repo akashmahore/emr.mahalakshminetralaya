@@ -1,6 +1,6 @@
 <?php
 /**
- * ICTHospital - the permission catalogue and the roles it applies to.
+ * Mahalakshmi Netralaya - the permission catalogue and the roles it applies to.
  *
  * This list used to be duplicated, once in PermissionController and once inside
  * permission.blade.php. The two had to stay in the same order or the checkbox
@@ -13,8 +13,8 @@
  * into underscores, so changing a label changes the stored key. Add to the end of
  * the list rather than reordering it if you already have permissions saved.
  *
- * Copyright (c) Mahalakshmi Netralaya <https://www.ictinnovations.com>
- * Part of ICTHospital <https://www.icthospital.com>
+ * Copyright (c) Mahalakshmi Netralaya
+ * Part of Mahalakshmi Netralaya EMR
  * Licensed under the GNU General Public License v3.0.
  */
 
@@ -28,14 +28,18 @@ return [
         'admin' => 'Admin',
         'doctor' => 'Doctors',
         'nurse' => 'Nurses',
-        'accountant' => 'Accountants',
         // The front desk: registration, appointments, admissions and taking payments.
         // Existing installs pick up the column with `php artisan hospital:sync-permissions`.
         'receptionist' => 'Receptionists',
-        // Their own columns so a pharmacist or laboratory login can be granted access.
+        // Their own columns so a pharmacist or pharmacy staff login can be granted access.
         // Nothing is granted by default; set it under Users and Roles, Permissions.
         'pharmacist' => 'Pharmacists',
-        'laboratorist' => 'Laboratory Staff',
+        'pharmacy_staff' => 'Pharmacy Staff',
+        // Ophthalmology-specific staff
+        'optometrist' => 'Optometrists',
+        'orthoptist' => 'Orthoptists',
+        'optician' => 'Opticians',
+        'camp_coordinator' => 'Camp Coordinators',
     ],
 
     'permissions' => [
@@ -57,31 +61,13 @@ return [
         'Appointment Calendar',
         'View Appointment Reports',
 
-        // Admissions, beds and wards
-        'Admission View',
-        'Admission Add',
-        'Admission Discharge',
-        'Bed View',
-        'Bed Allot',
-        'Bed Release',
-        'Ward View',
-        'Ward Add',
-        'Ward Update',
-        'Ward Delete',
-
-        // Clinical
+        // Clinical - Core
         'Prescription View',
         'Prescription Add',
         'Prescription Update',
         'Prescription Delete',
-        'Lab Test View',
-        'Lab Test Add',
-        'Lab Test Update',
-        'Lab Test Delete',
         'Diagnostic Report View',
         'Diagnostic Report Add',
-        'Operation Theatre View',
-        'Operation Theatre Schedule',
 
         // Pharmacy
         'Medicine View',
@@ -112,27 +98,17 @@ return [
         'Department Update',
         'Department Delete',
 
-        // Money
+        // Money - Simplified for Eye Hospital
         'Payment View',
         'Payment Add',
         'Payment Update',
         'Payment Delete',
-        'Patient Deposit',
         'Invoice View',
         'Invoice Print',
-        'Expense View',
-        'Expense Add',
-        'Expense Update',
-        'Expense Delete',
-        'Payroll View',
-        'Payroll Process',
         'View Payment Reports',
-        'Accounting',
 
         // Communication and administration
-        'Send Sms/Voice',
         'Send Notification',
-        'View Sms/voice log Reports',
         'Service View',
         'Service Add',
         'Service Update',
@@ -141,16 +117,8 @@ return [
         'Holidays Add',
         'Holidays Delete',
         'Hospital Information Add',
-        'Branch View',
-        'Branch Add',
-        'Branch Update',
-        'Branch Delete',
 
-        // Added 2026-10: doctor share, cash closing, consultations.
-        'Doctor Share View',
-        'Doctor Share Approve',
-        'Cash Close',
-        'Cash Close All Users',
+        // Consultations
         'Consultation View',
         'Consultation Add',
 
