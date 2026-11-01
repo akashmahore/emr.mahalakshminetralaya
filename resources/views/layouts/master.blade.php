@@ -81,9 +81,9 @@ window.addEventListener('keydown',function(e){if(e.keyIdentifier=='U+000A'||e.ke
     
 
 
-    <link rel="icon" href="{{ 'https://bumpy-turquoise-lorzytfb.edgeone.dev/favicon.ico' }}" sizes="any">
-    <link rel="icon" type="image/svg+xml" href="{{ 'https://bumpy-turquoise-lorzytfb.edgeone.dev/mark.svg' }}">
-    <link rel="apple-touch-icon" href="{{ 'https://bumpy-turquoise-lorzytfb.edgeone.dev/favicon-180.png' }}">
+    <link rel="icon" href="{{ 'https://logo-dppl33p2y7zo.edgeone.dev/favicon.ico' }}" sizes="any">
+    <link rel="icon" type="image/svg+xml" href="{{ 'https://logo-dppl33p2y7zo.edgeone.dev/mark.svg' }}">
+    <link rel="apple-touch-icon" href="{{ 'https://logo-dppl33p2y7zo.edgeone.dev/favicon-180.png' }}">
     {{--<link href='//cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/css/bootstrap-select.min.css' rel='stylesheet'>--}}
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.min.css">
 
@@ -353,7 +353,7 @@ table i {
 
        The breakpoint matches the sidebar's own d-none d-lg-block, so nothing changes
        on tablet and phone where the sidebar is off canvas. --}}
-  <style id="icthospital-content-offset">
+  <style id="Mahalakshmi Netralaya-content-offset">
     @media (min-width: 992px) {
       .main-content { padding-left: 300px; }
     }
@@ -401,7 +401,7 @@ table i {
 
                                 <a class="js-arrow" href="#">
                                     @if(Session::get('inName')=='' || Session::get('inName')=='Mahalakshmi Netralaya')
-                                    <img src="{{ 'https://bumpy-turquoise-lorzytfb.edgeone.dev/logo.svg' }}" alt="Mahalakshmi Netralaya" style="height:34px" />
+                                    <img src="{{ 'https://logo-dppl33p2y7zo.edgeone.dev/logo.svg' }}" alt="Mahalakshmi Netralaya" style="height:34px" />
                                     @else
                                       <h2>{{Session::get('inName')}}</h2>
                                     @endif

@@ -1,6 +1,6 @@
 <?php
 /**
- * ICTHospital - give a lab request real line items.
+ * Mahalakshmi Netralaya - give a lab request real line items.
  *
  * Same shape of problem as the prescription table. `lab.category_name` is a
  * varchar(1000) holding every test on the request as one string, and `lab.report`
@@ -13,7 +13,7 @@
  * kept and filled with readable summaries.
  *
  * Copyright (c) Mahalakshmi Netralaya <https://www.ictinnovations.com>
- * Part of ICTHospital <https://www.icthospital.com>
+ * Part of Mahalakshmi Netralaya <https://www.Mahalakshmi Netralaya.com>
  * Licensed under the GNU General Public License v3.0.
  */
 

@@ -1,4 +1,4 @@
-# ICTHospital User Guide
+# Mahalakshmi Netralaya User Guide
 
 This walks you through the system the way you'd actually use it: register a patient,
 book them in, admit them, prescribe, order bloods, dispense, bill, and read the reports
@@ -23,7 +23,7 @@ shorter than an administrator's.
 
 ### Load the demonstration data
 
-An empty system is hard to judge. If you're evaluating ICTHospital, load a small set of
+An empty system is hard to judge. If you're evaluating Mahalakshmi Netralaya, load a small set of
 believable records first:
 
 ```bash
@@ -354,11 +354,11 @@ and skip the demo seeder. Don't run `migrate:fresh` on anything real.
 
 ## Getting help
 
-ICTHospital is open source under the GPL v3. Issues and contributions are welcome at
-[github.com/ictinnovations/ICTHospital](https://github.com/ictinnovations/ICTHospital).
+Mahalakshmi Netralaya is open source under the GPL v3. Issues and contributions are welcome at
+[github.com/ictinnovations/Mahalakshmi Netralaya](https://github.com/ictinnovations/Mahalakshmi Netralaya).
 
 If you're weighing it up for a live deployment, get in touch through
-[icthospital.com](https://www.icthospital.com) and we can talk about your data and your
+[Mahalakshmi Netralaya.com](https://www.Mahalakshmi Netralaya.com) and we can talk about your data and your
 migration.
 
 Developed by Mahalakshmi Netralaya, [Mahalakshmi Netralaya](https://www.ictinnovations.com).

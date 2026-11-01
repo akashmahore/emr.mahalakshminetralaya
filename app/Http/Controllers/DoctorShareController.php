@@ -1,6 +1,6 @@
 <?php
 /**
- * ICTHospital - doctor share policies, the share report, approval and payout.
+ * Mahalakshmi Netralaya - doctor share policies, the share report, approval and payout.
  *
  * Shares are worked out when an invoice is raised (see ShareCalculator). A share can
  * only be approved once its invoice is paid in full, because a hospital pays the
@@ -8,7 +8,7 @@
  * that is also written to the accounting ledger as an expense.
  *
  * Copyright (c) Mahalakshmi Netralaya <https://www.ictinnovations.com>
- * Part of ICTHospital <https://www.icthospital.com>
+ * Part of Mahalakshmi Netralaya <https://www.Mahalakshmi Netralaya.com>
  * Licensed under the GNU General Public License v3.0.
  */
 

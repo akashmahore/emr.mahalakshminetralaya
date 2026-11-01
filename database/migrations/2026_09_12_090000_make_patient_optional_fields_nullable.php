@@ -1,6 +1,6 @@
 <?php
 /**
- * ICTHospital - let a patient be registered without a date of birth.
+ * Mahalakshmi Netralaya - let a patient be registered without a date of birth.
  *
  * The patient table was transcribed from the CodeIgniter schema, where every
  * column was NOT NULL and the application wrote empty strings into the ones it
@@ -16,7 +16,7 @@
  * today, but nothing should force a date column to hold a value it does not have.
  *
  * Copyright (c) Mahalakshmi Netralaya <https://www.ictinnovations.com>
- * Part of ICTHospital <https://www.icthospital.com>
+ * Part of Mahalakshmi Netralaya <https://www.Mahalakshmi Netralaya.com>
  * Licensed under the GNU General Public License v3.0.
  */
 

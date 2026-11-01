@@ -1,13 +1,13 @@
 <?php
 /**
- * ICTHospital - one drug on one prescription.
+ * Mahalakshmi Netralaya - one drug on one prescription.
  *
  * The name is stored alongside medicine_id on purpose. A prescription is a
  * clinical record of what was written on a given day, so it has to stay readable
  * even if the drug is renamed or dropped from the catalogue afterwards.
  *
  * Copyright (c) Mahalakshmi Netralaya <https://www.ictinnovations.com>
- * Part of ICTHospital <https://www.icthospital.com>
+ * Part of Mahalakshmi Netralaya <https://www.Mahalakshmi Netralaya.com>
  * Licensed under the GNU General Public License v3.0.
  */
 

@@ -1,12 +1,12 @@
 <?php
 /**
- * ICTHospital - appointment module feature tests.
+ * Mahalakshmi Netralaya - appointment module feature tests.
  *
  * The clash check is the reason this module exists as more than a form, so most
  * of these cover it.
  *
  * Copyright (c) Mahalakshmi Netralaya <https://www.ictinnovations.com>
- * Part of ICTHospital <https://www.icthospital.com>
+ * Part of Mahalakshmi Netralaya <https://www.Mahalakshmi Netralaya.com>
  * Licensed under the GNU General Public License v3.0.
  */
 

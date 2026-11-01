@@ -1,6 +1,6 @@
 <?php
 /**
- * ICTHospital - remind patients who still owe money.
+ * Mahalakshmi Netralaya - remind patients who still owe money.
  *
  * Replaces CronJob:cronjob and feeNotification:notification from ICTSchool, which
  * both chased unpaid monthly school fees.
@@ -8,7 +8,7 @@
  * Usage: php artisan hospital:payment-reminder
  *
  * Copyright (c) Mahalakshmi Netralaya <https://www.ictinnovations.com>
- * Part of ICTHospital <https://www.icthospital.com>
+ * Part of Mahalakshmi Netralaya <https://www.Mahalakshmi Netralaya.com>
  * Licensed under the GNU General Public License v3.0.
  */
 

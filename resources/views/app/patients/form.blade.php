@@ -1,11 +1,11 @@
 {{--
-  ICTHospital - patient registration and edit form.
+  Mahalakshmi Netralaya - patient registration and edit form.
 
   One form for both, because the fields are identical and two near-copies drift
   apart the moment a column is added.
 
   Copyright (c) Mahalakshmi Netralaya <https://www.ictinnovations.com>
-  Part of ICTHospital <https://www.icthospital.com>
+  Part of Mahalakshmi Netralaya <https://www.Mahalakshmi Netralaya.com>
   Licensed under the GNU General Public License v3.0.
 --}}
 @extends('layouts.master')

@@ -1,6 +1,6 @@
 <?php
 /**
- * ICTHospital - report on, and optionally apply, the schema modernisation.
+ * Mahalakshmi Netralaya - report on, and optionally apply, the schema modernisation.
  *
  *   php artisan hospital:modernise-schema            report only, changes nothing
  *   php artisan hospital:modernise-schema --apply    make the safe changes
@@ -9,7 +9,7 @@
  * up first, and the reason says what is wrong with it.
  *
  * Copyright (c) Mahalakshmi Netralaya <https://www.ictinnovations.com>
- * Part of ICTHospital <https://www.icthospital.com>
+ * Part of Mahalakshmi Netralaya <https://www.Mahalakshmi Netralaya.com>
  * Licensed under the GNU General Public License v3.0.
  */
 

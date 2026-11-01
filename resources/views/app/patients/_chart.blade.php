@@ -1,12 +1,12 @@
 {{--
-  ICTHospital - patient chart, shown under the patient's details.
+  Mahalakshmi Netralaya - patient chart, shown under the patient's details.
 
   Everything recorded against one patient, newest first, each read from the module
   that owns it: history notes, OPD visits with vitals, prescriptions, lab results,
   ward stays and billing. Each section links to that module for adding or editing.
 
   Copyright (c) Mahalakshmi Netralaya <https://www.ictinnovations.com>
-  Part of ICTHospital <https://www.icthospital.com>
+  Part of Mahalakshmi Netralaya <https://www.Mahalakshmi Netralaya.com>
   Licensed under the GNU General Public License v3.0.
 --}}
 @php($imaging = \App\Models\RadiologyOrder::where('patient_id', $patient->id)->orderByDesc('created_at')->get())

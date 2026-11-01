@@ -1,12 +1,12 @@
 {{--
-  ICTHospital - bed occupancy over a date range.
+  Mahalakshmi Netralaya - bed occupancy over a date range.
 
   The per day bar is drawn with a plain div rather than a charting library,
   because adding a JavaScript dependency for one horizontal bar is not worth the
   page weight or the supply chain.
 
   Copyright (c) Mahalakshmi Netralaya <https://www.ictinnovations.com>
-  Part of ICTHospital <https://www.icthospital.com>
+  Part of Mahalakshmi Netralaya <https://www.Mahalakshmi Netralaya.com>
   Licensed under the GNU General Public License v3.0.
 --}}
 @extends('layouts.master')

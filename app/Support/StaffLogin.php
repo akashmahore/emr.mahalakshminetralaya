@@ -1,6 +1,6 @@
 <?php
 /**
- * ICTHospital - sign-in accounts for doctors and staff.
+ * Mahalakshmi Netralaya - sign-in accounts for doctors and staff.
  *
  * A doctor or staff record and a login are separate rows: the record is who the person
  * is on the register, the users row is how they sign in and which permission column
@@ -9,7 +9,7 @@
  * username and password as soon as the person is added.
  *
  * Copyright (c) Mahalakshmi Netralaya <https://www.ictinnovations.com>
- * Part of ICTHospital <https://www.icthospital.com>
+ * Part of Mahalakshmi Netralaya <https://www.Mahalakshmi Netralaya.com>
  * Licensed under the GNU General Public License v3.0.
  */
 

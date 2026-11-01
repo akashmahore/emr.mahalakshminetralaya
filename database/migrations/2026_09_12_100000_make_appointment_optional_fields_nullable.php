@@ -1,6 +1,6 @@
 <?php
 /**
- * ICTHospital - let an appointment be stored without the legacy filler columns.
+ * Mahalakshmi Netralaya - let an appointment be stored without the legacy filler columns.
  *
  * Same problem as the patient table: the appointment schema was transcribed from
  * CodeIgniter, where every column was NOT NULL and the application wrote empty
@@ -10,7 +10,7 @@
  * fresh deployment or in CI.
  *
  * Copyright (c) Mahalakshmi Netralaya <https://www.ictinnovations.com>
- * Part of ICTHospital <https://www.icthospital.com>
+ * Part of Mahalakshmi Netralaya <https://www.Mahalakshmi Netralaya.com>
  * Licensed under the GNU General Public License v3.0.
  */
 

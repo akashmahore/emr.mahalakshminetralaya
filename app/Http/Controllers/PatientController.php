@@ -1,6 +1,6 @@
 <?php
 /**
- * ICTHospital - patient registration and records.
+ * Mahalakshmi Netralaya - patient registration and records.
  *
  * The patient table, model and migration came across from the CodeIgniter system
  * during the rebuild, but nothing drove them: there was no controller and no view,
@@ -9,7 +9,7 @@
  * prescriptions, lab requests and invoices all key on a patient row.
  *
  * Copyright (c) Mahalakshmi Netralaya <https://www.ictinnovations.com>
- * Part of ICTHospital <https://www.icthospital.com>
+ * Part of Mahalakshmi Netralaya <https://www.Mahalakshmi Netralaya.com>
  * Licensed under the GNU General Public License v3.0.
  */
 

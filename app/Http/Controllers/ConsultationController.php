@@ -1,6 +1,6 @@
 <?php
 /**
- * ICTHospital - the OPD consultation screen.
+ * Mahalakshmi Netralaya - the OPD consultation screen.
  *
  * One page per visit: vitals, complaint, history, examination by system, diagnosis,
  * plan and follow-up, the specialty sections, and orders (lab tests now, a
@@ -9,7 +9,7 @@
  * diabetic whether they are diabetic at every visit.
  *
  * Copyright (c) Mahalakshmi Netralaya <https://www.ictinnovations.com>
- * Part of ICTHospital <https://www.icthospital.com>
+ * Part of Mahalakshmi Netralaya <https://www.Mahalakshmi Netralaya.com>
  * Licensed under the GNU General Public License v3.0.
  */
 

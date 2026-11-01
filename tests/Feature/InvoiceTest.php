@@ -1,12 +1,12 @@
 <?php
 /**
- * ICTHospital - invoicing feature tests.
+ * Mahalakshmi Netralaya - invoicing feature tests.
  *
  * The derived settlement state and part payment are the reason the module exists
  * in this shape, so that is what most of these cover.
  *
  * Copyright (c) Mahalakshmi Netralaya <https://www.ictinnovations.com>
- * Part of ICTHospital <https://www.icthospital.com>
+ * Part of Mahalakshmi Netralaya <https://www.Mahalakshmi Netralaya.com>
  * Licensed under the GNU General Public License v3.0.
  */
 

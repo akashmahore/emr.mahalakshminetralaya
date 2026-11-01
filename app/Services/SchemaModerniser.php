@@ -1,6 +1,6 @@
 <?php
 /**
- * ICTHospital - bring the legacy schema up to something a database can enforce.
+ * Mahalakshmi Netralaya - bring the legacy schema up to something a database can enforce.
  *
  * The schema was carried over faithfully from the original hospital application,
  * which stored dates as varchar(100) and every relationship as a loose varchar
@@ -22,7 +22,7 @@
  * first, fix the data it complains about, then apply.
  *
  * Copyright (c) Mahalakshmi Netralaya <https://www.ictinnovations.com>
- * Part of ICTHospital <https://www.icthospital.com>
+ * Part of Mahalakshmi Netralaya <https://www.Mahalakshmi Netralaya.com>
  * Licensed under the GNU General Public License v3.0.
  */
 

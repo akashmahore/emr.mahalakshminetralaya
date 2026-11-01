@@ -1,6 +1,6 @@
 <?php
 /**
- * ICTHospital - appointment booking.
+ * Mahalakshmi Netralaya - appointment booking.
  *
  * The appointment table and model came across in the rebuild and the
  * hospital:appointment-reminder cron already reads them, but nothing could
@@ -11,7 +11,7 @@
  * was given and left the clash for the front desk to discover on the day.
  *
  * Copyright (c) Mahalakshmi Netralaya <https://www.ictinnovations.com>
- * Part of ICTHospital <https://www.icthospital.com>
+ * Part of Mahalakshmi Netralaya <https://www.Mahalakshmi Netralaya.com>
  * Licensed under the GNU General Public License v3.0.
  */
 

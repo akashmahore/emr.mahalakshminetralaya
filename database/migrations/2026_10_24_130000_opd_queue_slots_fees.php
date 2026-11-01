@@ -1,6 +1,6 @@
 <?php
 /**
- * ICTHospital - OPD token queue, doctor booking slots and visit fees.
+ * Mahalakshmi Netralaya - OPD token queue, doctor booking slots and visit fees.
  *
  * An outpatient clinic runs on tokens: the patient checks in at the desk, gets the
  * next number for that doctor, waits, is called in and leaves. The waiting time and
@@ -12,7 +12,7 @@
  * follow-up or an emergency visit costs with each doctor.
  *
  * Copyright (c) Mahalakshmi Netralaya <https://www.ictinnovations.com>
- * Part of ICTHospital <https://www.icthospital.com>
+ * Part of Mahalakshmi Netralaya <https://www.Mahalakshmi Netralaya.com>
  * Licensed under the GNU General Public License v3.0.
  */
 

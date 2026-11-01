@@ -1,6 +1,6 @@
 <?php
 /**
- * ICTHospital - jeremykenedy/laravel-logger settings (the package default file, published).
+ * Mahalakshmi Netralaya - jeremykenedy/laravel-logger settings (the package default file, published).
  * The package reads this file INSTEAD of its own when it exists, so it must stay complete.
  * Changed from the default: disableRoutes is true (see routes/web.php, Activity log).
  */
@@ -101,7 +101,7 @@ return [
     |--------------------------------------------------------------------------
     */
 
-    // ICTHospital: the package routes only ask for a login, so every role could open the
+    // Mahalakshmi Netralaya: the package routes only ask for a login, so every role could open the
     // activity log. They are off here and registered in routes/web.php behind admin.
     'disableRoutes' => env('LARAVEL_LOGGER_DISABLE_ROUTES', true),
 

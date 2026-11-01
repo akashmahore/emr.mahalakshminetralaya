@@ -1,13 +1,13 @@
 <?php
 /**
- * ICTHospital - radiology: the exam catalogue, orders and reports.
+ * Mahalakshmi Netralaya - radiology: the exam catalogue, orders and reports.
  *
  * An order moves ordered, scheduled, done, reported (or cancelled). The exam name,
  * modality and the radiologist's findings are written on the order itself, so a
  * report reads the same after the catalogue changes.
  *
  * Copyright (c) Mahalakshmi Netralaya <https://www.ictinnovations.com>
- * Part of ICTHospital <https://www.icthospital.com>
+ * Part of Mahalakshmi Netralaya <https://www.Mahalakshmi Netralaya.com>
  * Licensed under the GNU General Public License v3.0.
  */
 

@@ -1,5 +1,5 @@
 {{--
-  ICTHospital - billable services and price list.
+  Mahalakshmi Netralaya - billable services and price list.
 
   Editing is inline: each row is its own form, so a price can be corrected
   without a round trip to a separate screen. A price list gets adjusted far more
@@ -11,7 +11,7 @@
   how inline table editing usually ends up posting the wrong row.
 
   Copyright (c) Mahalakshmi Netralaya <https://www.ictinnovations.com>
-  Part of ICTHospital <https://www.icthospital.com>
+  Part of Mahalakshmi Netralaya <https://www.Mahalakshmi Netralaya.com>
   Licensed under the GNU General Public License v3.0.
 --}}
 @extends('layouts.master')

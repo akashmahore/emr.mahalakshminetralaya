@@ -1,6 +1,6 @@
 <?php
 /**
- * ICTHospital - administration route access tests.
+ * Mahalakshmi Netralaya - administration route access tests.
  *
  * The user, permission, branch and impersonation routes used to sit in a group
  * with no auth middleware, so an anonymous request could log in as any user,
@@ -9,7 +9,7 @@
  * staff who are not Admin, and check that an Admin can still use them.
  *
  * Copyright (c) Mahalakshmi Netralaya <https://www.ictinnovations.com>
- * Part of ICTHospital <https://www.icthospital.com>
+ * Part of Mahalakshmi Netralaya <https://www.Mahalakshmi Netralaya.com>
  * Licensed under the GNU General Public License v3.0.
  */
 

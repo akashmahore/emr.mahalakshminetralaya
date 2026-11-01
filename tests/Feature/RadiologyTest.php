@@ -1,9 +1,9 @@
 <?php
 /**
- * ICTHospital - radiology orders, reporting and billing.
+ * Mahalakshmi Netralaya - radiology orders, reporting and billing.
  *
  * Copyright (c) Mahalakshmi Netralaya <https://www.ictinnovations.com>
- * Part of ICTHospital <https://www.icthospital.com>
+ * Part of Mahalakshmi Netralaya <https://www.Mahalakshmi Netralaya.com>
  * Licensed under the GNU General Public License v3.0.
  */
 

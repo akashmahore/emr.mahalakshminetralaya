@@ -1,25 +1,22 @@
 <?php
 /**
- * ICTHospital - remind patients about an upcoming appointment.
+ * Mahalakshmi Netralaya - remind patients about an upcoming appointment.
  *
  * Replaces attendanceNotification from ICTSchool, which chased absent students and
  * texted their parents. A hospital does not take attendance, it books appointments,
- * so the same ICTCore plumbing now sends the patient a reminder for the day.
+ * so the same reminder plumbing now sends the patient a reminder for the day.
  *
  * Usage:
  *   php artisan hospital:appointment-reminder            reminds about tomorrow
  *   php artisan hospital:appointment-reminder --days=0   reminds about today
  *
- * Copyright (c) Mahalakshmi Netralaya <https://www.ictinnovations.com>
- * Part of ICTHospital <https://www.icthospital.com>
+ * Copyright (c) Mahalakshmi Netralaya
+ * Part of Mahalakshmi Netralaya <https://mahalakshminetralaya.com>
  * Licensed under the GNU General Public License v3.0.
  */
 
 namespace App\Console\Commands;
 
-use App\Http\Controllers\ICTCoreController;
-use App\Models\Ictcore_attendance;
-use App\Models\Ictcore_integration;
 use Carbon\Carbon;
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\DB;
@@ -31,17 +28,17 @@ class AppointmentReminder extends Command
 
     protected $description = 'Send an SMS reminder to every patient with an appointment on the target day';
 
-    /** Contacts pushed to ICTCore in a single run. */
+    /** Contacts pushed in a single run. */
     protected $batchLimit = 200;
 
     /** Local numbers starting with a single 0 get this country code instead. */
-    protected $countryCode = '92';
+    protected $countryCode = '91';
 
     public function handle()
     {
         $target = Carbon::now()->addDays((int) $this->option('days'))->format('Y-m-d');
 
-        foreach (['appointment', 'patient', 'notification_type', 'ictcore_integration'] as $table) {
+        foreach (['appointment', 'patient', 'notification_type'] as $table) {
             if (! Schema::hasTable($table)) {
                 $this->warn('Skipped: table ' . $table . ' is missing.');
 
@@ -50,19 +47,11 @@ class AppointmentReminder extends Command
         }
 
         $notification = DB::table('notification_type')
-            ->whereIn('notification', ['appointment', 'attendance'])
+            ->where('notification', 'appointment')
             ->first();
 
         if (! $notification || empty($notification->type)) {
             $this->warn('Skipped: no notification type is configured for appointments.');
-
-            return self::SUCCESS;
-        }
-
-        $integration = Ictcore_integration::where('type', $notification->type)->first();
-
-        if (! $integration) {
-            $this->warn('Skipped: no ICTCore integration for type ' . $notification->type . '.');
 
             return self::SUCCESS;
         }
@@ -75,68 +64,9 @@ class AppointmentReminder extends Command
             return self::SUCCESS;
         }
 
-        $ict = new ICTCoreController();
-        $telenor = isset($integration->method) && $integration->method === 'telenor';
+        $this->sendReminders($appointments, $target, $notification);
 
-        $groupId = $telenor
-            ? $ict->telenor_apis('group', '', '', '', '', '')
-            : $this->createGroup($ict, $integration, $target);
-
-        if (! $groupId) {
-            $this->warn('Skipped: ICTCore did not return a contact group.');
-
-            return self::SUCCESS;
-        }
-
-        $numbers = [];
-
-        foreach ($appointments as $row) {
-            $phone = $this->normalisePhone($row->phone);
-
-            if ($phone === null) {
-                continue;
-            }
-
-            if ($telenor) {
-                $numbers[] = $phone;
-                continue;
-            }
-
-            $contactId = $ict->ictcore_api('contacts', 'POST', [
-                'first_name' => $row->name,
-                'last_name' => '',
-                'phone' => $phone,
-                'email' => $row->email ?: '',
-            ]);
-
-            if ($contactId) {
-                $ict->ictcore_api('contacts/' . $contactId . '/link/' . $groupId, 'PUT', []);
-                $numbers[] = $phone;
-            }
-        }
-
-        if (empty($numbers)) {
-            $this->warn('Skipped: no usable phone numbers on those appointments.');
-
-            return self::SUCCESS;
-        }
-
-        if ($telenor) {
-            $ict->telenor_apis('add_contact', $groupId, implode(',', $numbers), '', '', '');
-            $settings = Ictcore_attendance::first();
-            $ict->telenor_apis(
-                'campaign_create',
-                $groupId,
-                '',
-                $this->message($target),
-                $settings ? $settings->telenor_file_id : '',
-                $notification->type
-            );
-        } else {
-            $this->createCampaign($ict, $integration, $notification, $groupId, $target);
-        }
-
-        $this->info('Reminder queued for ' . count($numbers) . ' patient(s) with appointments on ' . $target . '.');
+        $this->info('Reminder queued for ' . count($appointments) . ' patient(s) with appointments on ' . $target . '.');
 
         return self::SUCCESS;
     }
@@ -169,63 +99,45 @@ class AppointmentReminder extends Command
         return $query->get();
     }
 
-    protected function createGroup(ICTCoreController $ict, $integration, $target)
+    protected function sendReminders($appointments, $target, $notification)
     {
-        $configured = ! empty($integration->ictcore_url)
-            && ! empty($integration->ictcore_user)
-            && ! empty($integration->ictcore_password);
+        $numbers = [];
 
-        if (! $configured) {
-            return null;
+        foreach ($appointments as $row) {
+            $phone = $this->normalisePhone($row->phone);
+
+            if ($phone === null) {
+                continue;
+            }
+
+            $numbers[] = $phone;
         }
 
-        return $ict->ictcore_api('groups', 'POST', [
-            'name' => 'Appointment reminder ' . $target,
-            'description' => 'Patients with an appointment on ' . $target,
-        ]);
+        if (empty($numbers)) {
+            $this->warn('Skipped: no usable phone numbers on those appointments.');
+
+            return;
+        }
+
+        // TODO: Integrate with your SMS provider here (Twilio, AWS SNS, etc.)
+        // For now, we just log the reminders
+        foreach ($numbers as $phone) {
+            $this->sendSms($phone, $this->message($target));
+        }
+
+        $this->info('Reminder sent to ' . count($numbers) . ' patient(s) with appointments on ' . $target . '.');
     }
 
-    protected function createCampaign(ICTCoreController $ict, $integration, $notification, $groupId, $target)
+    protected function sendSms($phone, $message)
     {
-        $settings = Ictcore_attendance::first();
-        $programId = $settings ? $settings->ictcore_program_id : null;
-
-        if ($notification->type === 'sms' || empty($programId)) {
-            $textId = $ict->ictcore_api('messages/texts', 'POST', [
-                'name' => 'appointment_reminder',
-                'data' => $this->message($target),
-                'type' => 'utf-8',
-                'description' => '',
-            ]);
-
-            $programId = $ict->ictcore_api('programs/sendsms', 'POST', [
-                'name' => 'appointment_reminder',
-                'text_id' => $textId,
-            ]);
-        }
-
-        if (empty($programId)) {
-            return null;
-        }
-
-        return $ict->ictcore_api('campaigns', 'POST', [
-            'program_id' => $programId,
-            'group_id' => $groupId,
-            'delay' => '',
-            'try_allowed' => '',
-            'account_id' => isset($integration->ictcore_account_id) ? $integration->ictcore_account_id : 1,
-        ]);
+        // TODO: Implement actual SMS sending with your provider
+        // Examples: Twilio, AWS SNS, Vonage, Plivo, etc.
+        $this->line("SMS to {$phone}: {$message}");
     }
 
     protected function message($target)
     {
-        $settings = Ictcore_attendance::first();
-
-        if ($settings && ! empty($settings->description)) {
-            return $settings->description;
-        }
-
-        return 'Reminder: you have an appointment at our hospital on ' . $target . '. Please arrive ten minutes early.';
+        return 'Reminder: you have an appointment at Mahalakshmi Netralaya on ' . $target . '. Please arrive ten minutes early.';
     }
 
     protected function normalisePhone($phone)

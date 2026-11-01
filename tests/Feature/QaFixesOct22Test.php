@@ -1,12 +1,12 @@
 <?php
 /**
- * ICTHospital - fixes from the 22 October 2026 QA round.
+ * Mahalakshmi Netralaya - fixes from the 22 October 2026 QA round.
  *
  * Staff logins from the doctor and staff forms, admin-only areas hidden from and closed
  * to other roles, the activity log for admins, and medical history reports kept private.
  *
  * Copyright (c) Mahalakshmi Netralaya <https://www.ictinnovations.com>
- * Part of ICTHospital <https://www.icthospital.com>
+ * Part of Mahalakshmi Netralaya <https://www.Mahalakshmi Netralaya.com>
  * Licensed under the GNU General Public License v3.0.
  */
 

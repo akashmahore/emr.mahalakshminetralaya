@@ -1,6 +1,6 @@
 <?php
 /**
- * ICTHospital - give a pharmacy sale real line items.
+ * Mahalakshmi Netralaya - give a pharmacy sale real line items.
  *
  * pharmacy_payment.category_name and category_amount are the same packed string
  * pair found on prescriptions and lab requests: every item on the sale in one
@@ -9,7 +9,7 @@
  * catalogue only ever moved when somebody edited it by hand.
  *
  * Copyright (c) Mahalakshmi Netralaya <https://www.ictinnovations.com>
- * Part of ICTHospital <https://www.icthospital.com>
+ * Part of Mahalakshmi Netralaya <https://www.Mahalakshmi Netralaya.com>
  * Licensed under the GNU General Public License v3.0.
  */
 

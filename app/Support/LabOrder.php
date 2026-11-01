@@ -1,11 +1,11 @@
 <?php
 /**
- * ICTHospital - raises a lab request from code (tests ordered during a consultation).
+ * Mahalakshmi Netralaya - raises a lab request from code (tests ordered during a consultation).
  *
  * Writes the same rows and legacy summary columns as the lab request screen.
  *
  * Copyright (c) Mahalakshmi Netralaya <https://www.ictinnovations.com>
- * Part of ICTHospital <https://www.icthospital.com>
+ * Part of Mahalakshmi Netralaya <https://www.Mahalakshmi Netralaya.com>
  * Licensed under the GNU General Public License v3.0.
  */
 

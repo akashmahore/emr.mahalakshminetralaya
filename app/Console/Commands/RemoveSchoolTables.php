@@ -1,6 +1,6 @@
 <?php
 /**
- * ICTHospital - report on, and optionally apply, removal of the school tables.
+ * Mahalakshmi Netralaya - report on, and optionally apply, removal of the school tables.
  *
  *   php artisan hospital:remove-school-tables            report only
  *   php artisan hospital:remove-school-tables --apply    drop the empty ones
@@ -8,7 +8,7 @@
  *                                                        drop them even with rows
  *
  * Copyright (c) Mahalakshmi Netralaya <https://www.ictinnovations.com>
- * Part of ICTHospital <https://www.icthospital.com>
+ * Part of Mahalakshmi Netralaya <https://www.Mahalakshmi Netralaya.com>
  * Licensed under the GNU General Public License v3.0.
  */
 

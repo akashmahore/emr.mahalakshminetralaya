@@ -1,6 +1,6 @@
 <?php
 /**
- * ICTHospital - patient types, per-type price lists and fuller registration.
+ * Mahalakshmi Netralaya - patient types, per-type price lists and fuller registration.
  *
  * A private hospital does not charge everyone the same. A walk-in pays the general
  * price, a patient sent by a panel company is billed at the rate agreed with that
@@ -11,7 +11,7 @@
  * Every column added to a legacy table is nullable, so existing rows stay valid.
  *
  * Copyright (c) Mahalakshmi Netralaya <https://www.ictinnovations.com>
- * Part of ICTHospital <https://www.icthospital.com>
+ * Part of Mahalakshmi Netralaya <https://www.Mahalakshmi Netralaya.com>
  * Licensed under the GNU General Public License v3.0.
  */
 

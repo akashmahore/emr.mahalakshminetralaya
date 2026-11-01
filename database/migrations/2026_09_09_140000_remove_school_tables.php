@@ -1,6 +1,6 @@
 <?php
 /**
- * ICTHospital - drop the school tables on an existing install.
+ * Mahalakshmi Netralaya - drop the school tables on an existing install.
  *
  * The migrations that created these tables have been deleted, so a fresh install
  * never makes them. This removes them from a database that already has them.
@@ -13,7 +13,7 @@
  * nobody, and the data could not come back with them.
  *
  * Copyright (c) Mahalakshmi Netralaya <https://www.ictinnovations.com>
- * Part of ICTHospital <https://www.icthospital.com>
+ * Part of Mahalakshmi Netralaya <https://www.Mahalakshmi Netralaya.com>
  * Licensed under the GNU General Public License v3.0.
  */
 

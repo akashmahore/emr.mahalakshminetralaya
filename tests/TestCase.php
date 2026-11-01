@@ -1,6 +1,6 @@
 <?php
 /**
- * ICTHospital - base test case.
+ * Mahalakshmi Netralaya - base test case.
  *
  * Every clinical route now sits behind the permission catalogue, and a test
  * database built by RefreshDatabase has an empty permission table, so an Admin
@@ -12,7 +12,7 @@
  * and grant exactly what they mean to.
  *
  * Copyright (c) Mahalakshmi Netralaya <https://www.ictinnovations.com>
- * Part of ICTHospital <https://www.icthospital.com>
+ * Part of Mahalakshmi Netralaya <https://www.Mahalakshmi Netralaya.com>
  * Licensed under the GNU General Public License v3.0.
  */
 

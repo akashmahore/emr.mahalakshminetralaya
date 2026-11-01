@@ -1,6 +1,6 @@
 <?php
 /**
- * ICTHospital - one place that answers "is this user allowed to do that".
+ * Mahalakshmi Netralaya - one place that answers "is this user allowed to do that".
  *
  * The middleware and the sidebar both need the answer, and before this they could
  * not share it: the middleware ran a query per request and the sidebar simply did
@@ -10,7 +10,7 @@
  * gated menu entries on it would otherwise run a dozen identical queries.
  *
  * Copyright (c) Mahalakshmi Netralaya <https://www.ictinnovations.com>
- * Part of ICTHospital <https://www.icthospital.com>
+ * Part of Mahalakshmi Netralaya <https://www.Mahalakshmi Netralaya.com>
  * Licensed under the GNU General Public License v3.0.
  */
 

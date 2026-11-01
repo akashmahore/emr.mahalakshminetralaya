@@ -1,13 +1,13 @@
 <?php
 /**
- * ICTHospital - staff and department feature tests.
+ * Mahalakshmi Netralaya - staff and department feature tests.
  *
  * One controller drives five tables, so the tests run the same checks across all of
  * them rather than trusting that what works for nurses works for accountants. The
  * tables differ: only nurse has a z column, and receptionist and accountant have no y.
  *
  * Copyright (c) Mahalakshmi Netralaya <https://www.ictinnovations.com>
- * Part of ICTHospital <https://www.icthospital.com>
+ * Part of Mahalakshmi Netralaya <https://www.Mahalakshmi Netralaya.com>
  * Licensed under the GNU General Public License v3.0.
  */
 

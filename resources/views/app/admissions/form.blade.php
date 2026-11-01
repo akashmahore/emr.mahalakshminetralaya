@@ -1,11 +1,11 @@
 {{--
-  ICTHospital - admit a patient.
+  Mahalakshmi Netralaya - admit a patient.
 
   Only free beds are offered, so a clash is hard to reach from the form. The
   controller still checks, because two clerks can have this page open at once.
 
   Copyright (c) Mahalakshmi Netralaya <https://www.ictinnovations.com>
-  Part of ICTHospital <https://www.icthospital.com>
+  Part of Mahalakshmi Netralaya <https://www.Mahalakshmi Netralaya.com>
   Licensed under the GNU General Public License v3.0.
 --}}
 @extends('layouts.master')

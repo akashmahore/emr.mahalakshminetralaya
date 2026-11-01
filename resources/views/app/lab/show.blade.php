@@ -1,12 +1,12 @@
 {{--
-  ICTHospital - lab request and result entry.
+  Mahalakshmi Netralaya - lab request and result entry.
 
   Results are entered on the same screen that displays them, because a technician
   filling one test at a time should not have to move between a view and an edit
   form for every line.
 
   Copyright (c) Mahalakshmi Netralaya <https://www.ictinnovations.com>
-  Part of ICTHospital <https://www.icthospital.com>
+  Part of Mahalakshmi Netralaya <https://www.Mahalakshmi Netralaya.com>
   Licensed under the GNU General Public License v3.0.
 --}}
 @extends('layouts.master')

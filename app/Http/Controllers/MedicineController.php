@@ -1,13 +1,13 @@
 <?php
 /**
- * ICTHospital - the medicine catalogue.
+ * Mahalakshmi Netralaya - the medicine catalogue.
  *
  * Prescriptions and the pharmacy both read this list, and neither could be built
  * without a way to put anything in it. Stock movement and dispensing are the
  * pharmacy module's job; this is only the catalogue and the quantity on hand.
  *
  * Copyright (c) Mahalakshmi Netralaya <https://www.ictinnovations.com>
- * Part of ICTHospital <https://www.icthospital.com>
+ * Part of Mahalakshmi Netralaya <https://www.Mahalakshmi Netralaya.com>
  * Licensed under the GNU General Public License v3.0.
  */
 

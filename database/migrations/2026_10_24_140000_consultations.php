@@ -1,6 +1,6 @@
 <?php
 /**
- * ICTHospital - the OPD consultation note.
+ * Mahalakshmi Netralaya - the OPD consultation note.
  *
  * Until now a visit carried vitals and a free-text remark, and the clinical record
  * lived in prescriptions, lab requests and history notes. A consultation is the
@@ -10,7 +10,7 @@
  * fields and most visits fill only a few of them.
  *
  * Copyright (c) Mahalakshmi Netralaya <https://www.ictinnovations.com>
- * Part of ICTHospital <https://www.icthospital.com>
+ * Part of Mahalakshmi Netralaya <https://www.Mahalakshmi Netralaya.com>
  * Licensed under the GNU General Public License v3.0.
  */
 

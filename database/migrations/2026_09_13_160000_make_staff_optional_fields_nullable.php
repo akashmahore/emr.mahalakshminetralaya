@@ -1,6 +1,6 @@
 <?php
 /**
- * ICTHospital - let staff and departments be added with just a name.
+ * Mahalakshmi Netralaya - let staff and departments be added with just a name.
  *
  * The same NOT NULL inheritance that hit patient, appointment, ward and doctor. Every
  * column on nurse, pharmacist, laboratorist, receptionist, accountant and department
@@ -14,7 +14,7 @@
  * every new deployment does.
  *
  * Copyright (c) Mahalakshmi Netralaya <https://www.ictinnovations.com>
- * Part of ICTHospital <https://www.icthospital.com>
+ * Part of Mahalakshmi Netralaya <https://www.Mahalakshmi Netralaya.com>
  * Licensed under the GNU General Public License v3.0.
  */
 

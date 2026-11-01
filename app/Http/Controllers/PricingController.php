@@ -1,6 +1,6 @@
 <?php
 /**
- * ICTHospital - patient types and the price list per type.
+ * Mahalakshmi Netralaya - patient types and the price list per type.
  *
  * The services screen keeps the list price. This screen sets what each patient type
  * pays for each service, separately for outpatients and inpatients, and covers the
@@ -8,7 +8,7 @@
  * to start a new one, put a whole list up or down by a percentage, and download it.
  *
  * Copyright (c) Mahalakshmi Netralaya <https://www.ictinnovations.com>
- * Part of ICTHospital <https://www.icthospital.com>
+ * Part of Mahalakshmi Netralaya <https://www.Mahalakshmi Netralaya.com>
  * Licensed under the GNU General Public License v3.0.
  */
 

@@ -1,12 +1,12 @@
 {{--
-  ICTHospital - write or edit a prescription.
+  Mahalakshmi Netralaya - write or edit a prescription.
 
   The medicine rows repeat. A drug can be picked from the catalogue or typed in
   free, because a doctor writing something the hospital does not stock should not
   be blocked by the stock list.
 
   Copyright (c) Mahalakshmi Netralaya <https://www.ictinnovations.com>
-  Part of ICTHospital <https://www.icthospital.com>
+  Part of Mahalakshmi Netralaya <https://www.Mahalakshmi Netralaya.com>
   Licensed under the GNU General Public License v3.0.
 --}}
 @extends('layouts.master')

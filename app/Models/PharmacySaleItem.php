@@ -1,6 +1,6 @@
 <?php
 /**
- * ICTHospital - one line on a pharmacy sale.
+ * Mahalakshmi Netralaya - one line on a pharmacy sale.
  *
  * The name and unit price are stored here rather than read back from the
  * catalogue. A sale is a financial record of what was handed over and what was
@@ -8,7 +8,7 @@
  * updated.
  *
  * Copyright (c) Mahalakshmi Netralaya <https://www.ictinnovations.com>
- * Part of ICTHospital <https://www.icthospital.com>
+ * Part of Mahalakshmi Netralaya <https://www.Mahalakshmi Netralaya.com>
  * Licensed under the GNU General Public License v3.0.
  */
 

@@ -34,7 +34,13 @@ $active = function ($prefixes) use ($here) {
 ?>
 
 <div class="sidebar-nav nav-canvas-thumb">
-  <a class="ih-brand" href="{{ url('/dashboard') }}" aria-label="Mahalakshmi Netralaya home"><img src="https://bumpy-turquoise-lorzytfb.edgeone.dev/logo.svg" alt="Mahalakshmi Netralaya"></a>
+  <a class="ih-brand" href="{{ url('/dashboard') }}" aria-label="Mahalakshmi Netralaya home"><img src="https://logo-dppl33p2y7zo.edgeone.dev/logo.svg" alt="Mahalakshmi Netralaya"></a>
+  <div class="sidebar-founder" style="padding: 12px 16px; border-top: 1px solid rgba(255,255,255,0.1); margin-top: 8px;">
+    <small style="color: rgba(224,242,254,0.8); font-size: 12px; display: flex; align-items: center; gap: 6px;">
+      <i class="fas fa-user-md" style="color: #2dd4bf;"></i>
+      <span>Founded by <strong>Dr. Akash Mahore</strong></span>
+    </small>
+  </div>
   <ul class="nav nav-pills nav-stacked main-menu">
 
     <li class="nav-header">Main</li>

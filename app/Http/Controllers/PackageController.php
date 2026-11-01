@@ -1,13 +1,13 @@
 <?php
 /**
- * ICTHospital - what a service package covers.
+ * Mahalakshmi Netralaya - what a service package covers.
  *
  * A package (a normal delivery, a dialysis course, a health check) is billed as one
  * line at its own price. The components are listed so the invoice shows the
  * patient what the price includes and the desk knows what to deliver.
  *
  * Copyright (c) Mahalakshmi Netralaya <https://www.ictinnovations.com>
- * Part of ICTHospital <https://www.icthospital.com>
+ * Part of Mahalakshmi Netralaya <https://www.Mahalakshmi Netralaya.com>
  * Licensed under the GNU General Public License v3.0.
  */
 

@@ -1,6 +1,6 @@
 <?php
 /**
- * ICTHospital - nullable columns for medical history and payment gateways.
+ * Mahalakshmi Netralaya - nullable columns for medical history and payment gateways.
  *
  * The same NOT NULL inheritance that hit every other legacy table. A history entry
  * with no attachment, or a gateway configured with only an API username, should be
@@ -8,7 +8,7 @@
  * directly.
  *
  * Copyright (c) Mahalakshmi Netralaya <https://www.ictinnovations.com>
- * Part of ICTHospital <https://www.icthospital.com>
+ * Part of Mahalakshmi Netralaya <https://www.Mahalakshmi Netralaya.com>
  * Licensed under the GNU General Public License v3.0.
  */
 

@@ -1,6 +1,6 @@
 <?php
 /**
- * ICTHospital - works out doctor shares for an invoice.
+ * Mahalakshmi Netralaya - works out doctor shares for an invoice.
  *
  * The base of a share is what the hospital actually charged for the line: the line
  * total less its part of any invoice discount, spread over the lines by value. Tax
@@ -11,7 +11,7 @@
  * policy cannot alter money that has been signed off.
  *
  * Copyright (c) Mahalakshmi Netralaya <https://www.ictinnovations.com>
- * Part of ICTHospital <https://www.icthospital.com>
+ * Part of Mahalakshmi Netralaya <https://www.Mahalakshmi Netralaya.com>
  * Licensed under the GNU General Public License v3.0.
  */
 

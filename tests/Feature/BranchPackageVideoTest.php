@@ -1,9 +1,9 @@
 <?php
 /**
- * ICTHospital - video visits, service kinds and packages, hospital branches.
+ * Mahalakshmi Netralaya - video visits, service kinds and packages, hospital branches.
  *
  * Copyright (c) Mahalakshmi Netralaya <https://www.ictinnovations.com>
- * Part of ICTHospital <https://www.icthospital.com>
+ * Part of Mahalakshmi Netralaya <https://www.Mahalakshmi Netralaya.com>
  * Licensed under the GNU General Public License v3.0.
  */
 
@@ -51,7 +51,7 @@ class BranchPackageVideoTest extends TestCase
         $this->book(['video' => 1])->assertSessionHasNoErrors();
         $a = Appointment::first();
         $this->assertSame('video', $a->mode);
-        $this->assertMatchesRegularExpression('/^icthospital-[0-9a-f]{24}$/', $a->video_room);
+        $this->assertMatchesRegularExpression('/^Mahalakshmi Netralaya-[0-9a-f]{24}$/', $a->video_room);
 
         $room = $a->video_room;
         $this->put('/appointments/' . $a->id, ['patient' => $this->patient->id, 'doctor' => $this->doctor->id, 'date' => $a->date,

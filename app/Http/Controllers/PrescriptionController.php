@@ -1,6 +1,6 @@
 <?php
 /**
- * ICTHospital - prescriptions.
+ * Mahalakshmi Netralaya - prescriptions.
  *
  * The prescription table came across in the rebuild with a varchar(1000)
  * `medicine` column that the old application packed the whole drug list into as
@@ -11,7 +11,7 @@
  * still written with a readable summary so anything reading it keeps working.
  *
  * Copyright (c) Mahalakshmi Netralaya <https://www.ictinnovations.com>
- * Part of ICTHospital <https://www.icthospital.com>
+ * Part of Mahalakshmi Netralaya <https://www.Mahalakshmi Netralaya.com>
  * Licensed under the GNU General Public License v3.0.
  */
 

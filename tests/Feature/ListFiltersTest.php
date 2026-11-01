@@ -1,6 +1,6 @@
 <?php
 /**
- * ICTHospital - list filters submitted with blank fields.
+ * Mahalakshmi Netralaya - list filters submitted with blank fields.
  *
  * A filter form sends every field, and Laravel turns a blank one into null. The lists
  * compared against '' and so filtered on "status IS NULL" and similar, which returned
@@ -8,7 +8,7 @@
  * 22 October 2026). Each list must treat a blank field as "all".
  *
  * Copyright (c) Mahalakshmi Netralaya <https://www.ictinnovations.com>
- * Part of ICTHospital <https://www.icthospital.com>
+ * Part of Mahalakshmi Netralaya <https://www.Mahalakshmi Netralaya.com>
  * Licensed under the GNU General Public License v3.0.
  */
 

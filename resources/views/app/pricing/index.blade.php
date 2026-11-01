@@ -1,8 +1,8 @@
 {{--
-  ICTHospital - price list per patient type, outpatient and inpatient.
+  Mahalakshmi Netralaya - price list per patient type, outpatient and inpatient.
 
   Copyright (c) Mahalakshmi Netralaya <https://www.ictinnovations.com>
-  Part of ICTHospital <https://www.icthospital.com>
+  Part of Mahalakshmi Netralaya <https://www.Mahalakshmi Netralaya.com>
   Licensed under the GNU General Public License v3.0.
 --}}
 @extends('layouts.master')

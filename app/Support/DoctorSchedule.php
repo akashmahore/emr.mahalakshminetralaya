@@ -1,6 +1,6 @@
 <?php
 /**
- * ICTHospital - when a doctor can be booked.
+ * Mahalakshmi Netralaya - when a doctor can be booked.
  *
  * A doctor with no weekly slots set up can be booked at any time, exactly as before,
  * so an install that never touches this screen behaves the same. Once a doctor has
@@ -8,7 +8,7 @@
  * (leave, a half day) apply either way.
  *
  * Copyright (c) Mahalakshmi Netralaya <https://www.ictinnovations.com>
- * Part of ICTHospital <https://www.icthospital.com>
+ * Part of Mahalakshmi Netralaya <https://www.Mahalakshmi Netralaya.com>
  * Licensed under the GNU General Public License v3.0.
  */
 

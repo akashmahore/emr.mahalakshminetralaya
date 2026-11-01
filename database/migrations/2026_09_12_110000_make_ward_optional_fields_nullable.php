@@ -1,6 +1,6 @@
 <?php
 /**
- * ICTHospital - let bed and admission rows hold real nulls.
+ * Mahalakshmi Netralaya - let bed and admission rows hold real nulls.
  *
  * Third table group with the same inherited problem: the CodeIgniter schema
  * declared every column NOT NULL and the application wrote empty strings, so a
@@ -13,7 +13,7 @@
  * is exactly the ambiguity this replaces.
  *
  * Copyright (c) Mahalakshmi Netralaya <https://www.ictinnovations.com>
- * Part of ICTHospital <https://www.icthospital.com>
+ * Part of Mahalakshmi Netralaya <https://www.Mahalakshmi Netralaya.com>
  * Licensed under the GNU General Public License v3.0.
  */
 

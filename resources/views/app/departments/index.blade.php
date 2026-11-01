@@ -1,12 +1,12 @@
 {{--
-  ICTHospital - hospital departments.
+  Mahalakshmi Netralaya - hospital departments.
 
   Inline edit, one form per row, declared above the table and referenced by the HTML
   form attribute. A form element cannot wrap a table row, and nesting them in the cells
   makes the browser reparent the markup and post the wrong row.
 
   Copyright (c) Mahalakshmi Netralaya <https://www.ictinnovations.com>
-  Part of ICTHospital <https://www.icthospital.com>
+  Part of Mahalakshmi Netralaya <https://www.Mahalakshmi Netralaya.com>
   Licensed under the GNU General Public License v3.0.
 --}}
 @extends('layouts.master')

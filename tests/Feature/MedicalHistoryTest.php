@@ -1,6 +1,6 @@
 <?php
 /**
- * ICTHospital - medical history and payment gateway feature tests.
+ * Mahalakshmi Netralaya - medical history and payment gateway feature tests.
  *
  * Two things carry most of the weight here. A history entry keeps the patient details
  * as they were when it was written, so an old note still reads correctly after someone
@@ -8,7 +8,7 @@
  * settings screen that prints an API password puts it in every browser cache.
  *
  * Copyright (c) Mahalakshmi Netralaya <https://www.ictinnovations.com>
- * Part of ICTHospital <https://www.icthospital.com>
+ * Part of Mahalakshmi Netralaya <https://www.Mahalakshmi Netralaya.com>
  * Licensed under the GNU General Public License v3.0.
  */
 

@@ -1,6 +1,6 @@
 <?php
 /**
- * ICTHospital - remove the school tables inherited from ICTSchool.
+ * Mahalakshmi Netralaya - remove the school tables inherited from ICTSchool.
  *
  * Thirty-three tables came across with the fork and describe a school, not a
  * hospital: students, classes, sections, subjects, exams, marks, GPA rules,
@@ -19,7 +19,7 @@
  * hospital holidays.
  *
  * Copyright (c) Mahalakshmi Netralaya <https://www.ictinnovations.com>
- * Part of ICTHospital <https://www.icthospital.com>
+ * Part of Mahalakshmi Netralaya <https://www.Mahalakshmi Netralaya.com>
  * Licensed under the GNU General Public License v3.0.
  */
 

@@ -1,6 +1,6 @@
 <?php
 /**
- * ICTHospital - hospital departments.
+ * Mahalakshmi Netralaya - hospital departments.
  *
  * The department table came across from the CodeIgniter system with no screen, so the
  * doctor form had to fall back to free text with a datalist of whatever had already
@@ -13,7 +13,7 @@
  * doctors across instead of silently orphaning them.
  *
  * Copyright (c) Mahalakshmi Netralaya <https://www.ictinnovations.com>
- * Part of ICTHospital <https://www.icthospital.com>
+ * Part of Mahalakshmi Netralaya <https://www.Mahalakshmi Netralaya.com>
  * Licensed under the GNU General Public License v3.0.
  */
 

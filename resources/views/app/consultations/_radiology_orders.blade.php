@@ -1,8 +1,8 @@
 {{--
-  ICTHospital - radiology orders on the consultation screen.
+  Mahalakshmi Netralaya - radiology orders on the consultation screen.
 
   Copyright (c) Mahalakshmi Netralaya <https://www.ictinnovations.com>
-  Part of ICTHospital <https://www.icthospital.com>
+  Part of Mahalakshmi Netralaya <https://www.Mahalakshmi Netralaya.com>
   Licensed under the GNU General Public License v3.0.
 --}}
 @php($radExams = \App\Models\RadiologyExam::where('active', true)->orderBy('modality')->orderBy('name')->get())

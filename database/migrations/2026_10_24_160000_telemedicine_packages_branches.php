@@ -1,6 +1,6 @@
 <?php
 /**
- * ICTHospital - video visits, service kinds and packages, and hospital branches.
+ * Mahalakshmi Netralaya - video visits, service kinds and packages, and hospital branches.
  *
  * Video visits: an appointment can be a video consultation with its own meeting
  * room, opened by the doctor from the queue and sent to the patient as a link.
@@ -16,7 +16,7 @@
  * new table.
  *
  * Copyright (c) Mahalakshmi Netralaya <https://www.ictinnovations.com>
- * Part of ICTHospital <https://www.icthospital.com>
+ * Part of Mahalakshmi Netralaya <https://www.Mahalakshmi Netralaya.com>
  * Licensed under the GNU General Public License v3.0.
  */
 

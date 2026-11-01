@@ -1,9 +1,9 @@
 <?php
 /**
- * ICTHospital - a reusable consultation note template.
+ * Mahalakshmi Netralaya - a reusable consultation note template.
  *
  * Copyright (c) Mahalakshmi Netralaya <https://www.ictinnovations.com>
- * Part of ICTHospital <https://www.icthospital.com>
+ * Part of Mahalakshmi Netralaya <https://www.Mahalakshmi Netralaya.com>
  * Licensed under the GNU General Public License v3.0.
  */
 

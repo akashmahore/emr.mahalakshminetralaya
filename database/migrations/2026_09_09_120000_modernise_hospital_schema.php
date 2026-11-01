@@ -1,6 +1,6 @@
 <?php
 /**
- * ICTHospital - modernise the legacy schema.
+ * Mahalakshmi Netralaya - modernise the legacy schema.
  *
  * Converts varchar date columns to DATE or DATETIME, converts the varchar columns
  * that hold a parent row's id to integers, and adds the foreign keys. Each change
@@ -9,7 +9,7 @@
  * one. Run `php artisan hospital:modernise-schema` beforehand to see the report.
  *
  * Copyright (c) Mahalakshmi Netralaya <https://www.ictinnovations.com>
- * Part of ICTHospital <https://www.icthospital.com>
+ * Part of Mahalakshmi Netralaya <https://www.Mahalakshmi Netralaya.com>
  * Licensed under the GNU General Public License v3.0.
  */
 

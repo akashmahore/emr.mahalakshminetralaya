@@ -1,6 +1,6 @@
 <?php
 /**
- * ICTHospital - permission enforcement feature tests.
+ * Mahalakshmi Netralaya - permission enforcement feature tests.
  *
  * The 90 entry catalogue existed and the grid edited it, but no clinical route
  * checked it, so anyone with an account reached every screen. These tests hold
@@ -8,7 +8,7 @@
  * granting the one right it needs is enough to let it in.
  *
  * Copyright (c) Mahalakshmi Netralaya <https://www.ictinnovations.com>
- * Part of ICTHospital <https://www.icthospital.com>
+ * Part of Mahalakshmi Netralaya <https://www.Mahalakshmi Netralaya.com>
  * Licensed under the GNU General Public License v3.0.
  */
 

@@ -1,13 +1,13 @@
 <?php
 /**
- * ICTHospital - one test on one lab request.
+ * Mahalakshmi Netralaya - one test on one lab request.
  *
  * The reference range is copied onto the row rather than only referenced, because
  * a result is only interpretable against the range that applied when it was
  * measured, and laboratories revise their ranges.
  *
  * Copyright (c) Mahalakshmi Netralaya <https://www.ictinnovations.com>
- * Part of ICTHospital <https://www.icthospital.com>
+ * Part of Mahalakshmi Netralaya <https://www.Mahalakshmi Netralaya.com>
  * Licensed under the GNU General Public License v3.0.
  */
 

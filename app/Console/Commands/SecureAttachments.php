@@ -1,13 +1,13 @@
 <?php
 /**
- * ICTHospital - move medical history attachments off the public disk.
+ * Mahalakshmi Netralaya - move medical history attachments off the public disk.
  *
  * Reports used to be stored under storage/app/public, which the web server serves to
  * anyone holding the link. New uploads go to the private disk; this moves the old ones
  * across so they open only through /history/{id}/attachment. Safe to run more than once.
  *
  * Copyright (c) Mahalakshmi Netralaya <https://www.ictinnovations.com>
- * Part of ICTHospital <https://www.icthospital.com>
+ * Part of Mahalakshmi Netralaya <https://www.Mahalakshmi Netralaya.com>
  * Licensed under the GNU General Public License v3.0.
  */
 

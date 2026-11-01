@@ -1,8 +1,8 @@
 {{--
-  ICTHospital - a doctor's weekly booking slots and blocked dates.
+  Mahalakshmi Netralaya - a doctor's weekly booking slots and blocked dates.
 
   Copyright (c) Mahalakshmi Netralaya <https://www.ictinnovations.com>
-  Part of ICTHospital <https://www.icthospital.com>
+  Part of Mahalakshmi Netralaya <https://www.Mahalakshmi Netralaya.com>
   Licensed under the GNU General Public License v3.0.
 --}}
 @extends('layouts.master')

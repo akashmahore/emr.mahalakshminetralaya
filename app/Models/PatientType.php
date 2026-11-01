@@ -1,9 +1,9 @@
 <?php
 /**
- * ICTHospital - a patient type: General, a panel company, charity, an online platform.
+ * Mahalakshmi Netralaya - a patient type: General, a panel company, charity, an online platform.
  *
  * Copyright (c) Mahalakshmi Netralaya <https://www.ictinnovations.com>
- * Part of ICTHospital <https://www.icthospital.com>
+ * Part of Mahalakshmi Netralaya <https://www.Mahalakshmi Netralaya.com>
  * Licensed under the GNU General Public License v3.0.
  */
 

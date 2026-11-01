@@ -1,6 +1,6 @@
 <?php
 /**
- * ICTHospital - service and price list feature tests.
+ * Mahalakshmi Netralaya - service and price list feature tests.
  *
  * The one that matters most is the last: editing a price must not rewrite an
  * invoice that was already raised at the old price. Every catalogue in this
@@ -8,7 +8,7 @@
  * were introduced to prevent.
  *
  * Copyright (c) Mahalakshmi Netralaya <https://www.ictinnovations.com>
- * Part of ICTHospital <https://www.icthospital.com>
+ * Part of Mahalakshmi Netralaya <https://www.Mahalakshmi Netralaya.com>
  * Licensed under the GNU General Public License v3.0.
  */
 

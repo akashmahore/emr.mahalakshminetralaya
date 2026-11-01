@@ -1,6 +1,6 @@
 <?php
 /**
- * ICTHospital - give a prescription real line items.
+ * Mahalakshmi Netralaya - give a prescription real line items.
  *
  * The legacy `prescription.medicine` column is a varchar(1000) that the
  * CodeIgniter application packed the whole drug list into as one string. Nothing
@@ -13,7 +13,7 @@
  * working and old rows are not stranded.
  *
  * Copyright (c) Mahalakshmi Netralaya <https://www.ictinnovations.com>
- * Part of ICTHospital <https://www.icthospital.com>
+ * Part of Mahalakshmi Netralaya <https://www.Mahalakshmi Netralaya.com>
  * Licensed under the GNU General Public License v3.0.
  */
 

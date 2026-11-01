@@ -1,13 +1,13 @@
 <?php
 /**
- * ICTHospital - prescription and medicine catalogue feature tests.
+ * Mahalakshmi Netralaya - prescription and medicine catalogue feature tests.
  *
  * The point of the module is that a prescription's drugs are rows rather than a
  * packed string, so most of these check that the rows exist, stay readable, and
  * can be queried.
  *
  * Copyright (c) Mahalakshmi Netralaya <https://www.ictinnovations.com>
- * Part of ICTHospital <https://www.icthospital.com>
+ * Part of Mahalakshmi Netralaya <https://www.Mahalakshmi Netralaya.com>
  * Licensed under the GNU General Public License v3.0.
  */
 

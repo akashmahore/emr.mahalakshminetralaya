@@ -1,6 +1,6 @@
 <?php
 /**
- * ICTHospital - the doctor register.
+ * Mahalakshmi Netralaya - the doctor register.
  *
  * Appointments, prescriptions, lab requests and invoices all pick a doctor from
  * this table, and until now there was no way to put one in it. A clean install
@@ -15,7 +15,7 @@
  * doctors with it; see DepartmentController.
  *
  * Copyright (c) Mahalakshmi Netralaya <https://www.ictinnovations.com>
- * Part of ICTHospital <https://www.icthospital.com>
+ * Part of Mahalakshmi Netralaya <https://www.Mahalakshmi Netralaya.com>
  * Licensed under the GNU General Public License v3.0.
  */
 

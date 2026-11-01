@@ -1,12 +1,12 @@
 <?php
 /**
- * ICTHospital - beds and admissions feature tests.
+ * Mahalakshmi Netralaya - beds and admissions feature tests.
  *
  * The invariants are the point of the module: one patient per bed, one bed per
  * patient, and a discharge that actually frees the bed.
  *
  * Copyright (c) Mahalakshmi Netralaya <https://www.ictinnovations.com>
- * Part of ICTHospital <https://www.icthospital.com>
+ * Part of Mahalakshmi Netralaya <https://www.Mahalakshmi Netralaya.com>
  * Licensed under the GNU General Public License v3.0.
  */
 

@@ -1,12 +1,12 @@
 <?php
 /**
- * ICTHospital - laboratory feature tests.
+ * Mahalakshmi Netralaya - laboratory feature tests.
  *
  * The derived status and the part reported state are the reason the module was
  * built this way, so most of these check those.
  *
  * Copyright (c) Mahalakshmi Netralaya <https://www.ictinnovations.com>
- * Part of ICTHospital <https://www.icthospital.com>
+ * Part of Mahalakshmi Netralaya <https://www.Mahalakshmi Netralaya.com>
  * Licensed under the GNU General Public License v3.0.
  */
 

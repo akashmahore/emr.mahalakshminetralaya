@@ -1,6 +1,6 @@
 <?php
 /**
- * ICTHospital - the writes that had no lock.
+ * Mahalakshmi Netralaya - the writes that had no lock.
  *
  * Appointments and admissions already took a row lock. Pharmacy stock, invoice
  * payment and patient id allocation did not, and each could be made to misbehave by
@@ -14,7 +14,7 @@
  * production, and are reviewable in the three controllers.
  *
  * Copyright (c) Mahalakshmi Netralaya <https://www.ictinnovations.com>
- * Part of ICTHospital <https://www.icthospital.com>
+ * Part of Mahalakshmi Netralaya <https://www.Mahalakshmi Netralaya.com>
  * Licensed under the GNU General Public License v3.0.
  */
 

@@ -1,6 +1,6 @@
 <?php
 /**
- * ICTHospital - a small set of believable records for evaluating the system.
+ * Mahalakshmi Netralaya - a small set of believable records for evaluating the system.
  *
  * Every screen looks the same when it is empty, and an empty system is the hardest
  * thing to judge. This fills one day of a small hospital: a few departments and
@@ -15,7 +15,7 @@
  *   php artisan db:seed --class=DemoDataSeeder
  *
  * Copyright (c) Mahalakshmi Netralaya <https://www.ictinnovations.com>
- * Part of ICTHospital <https://www.icthospital.com>
+ * Part of Mahalakshmi Netralaya <https://www.Mahalakshmi Netralaya.com>
  * Licensed under the GNU General Public License v3.0.
  */
 
@@ -119,7 +119,7 @@ class DemoDataSeeder extends Seeder
         ];
         foreach ($people as [$login, $first, $last, $group]) {
             \App\Models\User::firstOrCreate(['login' => $login], [
-                'firstname' => $first, 'lastname' => $last, 'email' => $login . '@demo.icthospital.test',
+                'firstname' => $first, 'lastname' => $last, 'email' => $login . '@demo.Mahalakshmi Netralaya.test',
                 'group' => $group, 'desc' => 'Demo login (' . strtolower($group) . ')',
                 'password' => \Illuminate\Support\Facades\Hash::make($password),
             ]);

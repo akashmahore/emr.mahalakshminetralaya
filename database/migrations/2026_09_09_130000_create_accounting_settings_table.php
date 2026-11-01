@@ -1,6 +1,6 @@
 <?php
 /**
- * ICTHospital - the accounting_settings table.
+ * Mahalakshmi Netralaya - the accounting_settings table.
  *
  * AccountingSetting has always been in the model directory and the accounting
  * page has always queried it, but no migration ever created the table, so
@@ -9,7 +9,7 @@
  * It holds the credentials for an external accounting API, one row.
  *
  * Copyright (c) Mahalakshmi Netralaya <https://www.ictinnovations.com>
- * Part of ICTHospital <https://www.icthospital.com>
+ * Part of Mahalakshmi Netralaya <https://www.Mahalakshmi Netralaya.com>
  * Licensed under the GNU General Public License v3.0.
  */
 

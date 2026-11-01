@@ -1,9 +1,9 @@
 <?php
 /**
- * ICTHospital - the doctor's note for one OPD visit.
+ * Mahalakshmi Netralaya - the doctor's note for one OPD visit.
  *
  * Copyright (c) Mahalakshmi Netralaya <https://www.ictinnovations.com>
- * Part of ICTHospital <https://www.icthospital.com>
+ * Part of Mahalakshmi Netralaya <https://www.Mahalakshmi Netralaya.com>
  * Licensed under the GNU General Public License v3.0.
  */
 

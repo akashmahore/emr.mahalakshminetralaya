@@ -1,11 +1,11 @@
 {{--
-  ICTHospital - shown when a role is not granted the permission a screen needs.
+  Mahalakshmi Netralaya - shown when a role is not granted the permission a screen needs.
 
   The middleware used to redirect to a route that did not exist, so the user got a
   404 and no idea why. This says which right is missing and who can grant it.
 
   Copyright (c) Mahalakshmi Netralaya <https://www.ictinnovations.com>
-  Part of ICTHospital <https://www.icthospital.com>
+  Part of Mahalakshmi Netralaya <https://www.Mahalakshmi Netralaya.com>
   Licensed under the GNU General Public License v3.0.
 --}}
 @extends('layouts.master')

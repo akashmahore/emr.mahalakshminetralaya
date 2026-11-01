@@ -1,6 +1,6 @@
 <?php
 /**
- * ICTHospital - basic application boot test.
+ * Mahalakshmi Netralaya - basic application boot test.
  *
  * This replaces the stock Laravel scaffold test, which asserted a 200 from `/`
  * without migrating anything. The root route reads settings out of the database,
@@ -8,7 +8,7 @@
  * about whether the application works.
  *
  * Copyright (c) Mahalakshmi Netralaya <https://www.ictinnovations.com>
- * Part of ICTHospital <https://www.icthospital.com>
+ * Part of Mahalakshmi Netralaya <https://www.Mahalakshmi Netralaya.com>
  * Licensed under the GNU General Public License v3.0.
  */
 

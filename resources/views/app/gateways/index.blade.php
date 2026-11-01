@@ -1,11 +1,11 @@
 {{--
-  ICTHospital - payment gateway credentials.
+  Mahalakshmi Netralaya - payment gateway credentials.
 
   Secrets are never rendered back. Each one shows as set or not set, and leaving a
   field blank on save keeps whatever is stored.
 
   Copyright (c) Mahalakshmi Netralaya <https://www.ictinnovations.com>
-  Part of ICTHospital <https://www.icthospital.com>
+  Part of Mahalakshmi Netralaya <https://www.Mahalakshmi Netralaya.com>
   Licensed under the GNU General Public License v3.0.
 --}}
 @extends('layouts.master')

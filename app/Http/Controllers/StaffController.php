@@ -1,18 +1,19 @@
 <?php
 /**
- * ICTHospital - nurses, pharmacists, laboratory staff, receptionists and accountants.
+ * Mahalakshmi Netralaya - nurses, pharmacists, optometrists, orthoptists, opticians,
+ * receptionists, pharmacy staff, and camp coordinators.
  *
- * Five tables of the same shape, so one controller drives all of them from
- * config/hospital_staff.php rather than five near-copies that drift the first time a
+ * Tables of the same shape, so one controller drives all of them from
+ * config/hospital_staff.php rather than near-copies that drift the first time a
  * column is added to one. The type arrives as a route segment and is looked up in that
  * map; anything not in the map is a 404 rather than a guessed table name.
  *
- * Doctors are not here. They carry a department, a qualification and an ICTCore
+ * Doctors are not here. They carry a department, a qualification and a
  * procedure id, and the clinical screens select from them, so they keep their own
  * controller.
  *
- * Copyright (c) Mahalakshmi Netralaya <https://www.ictinnovations.com>
- * Part of ICTHospital <https://www.icthospital.com>
+ * Copyright (c) Mahalakshmi Netralaya
+ * Part of Mahalakshmi Netralaya <https://mahalakshminetralaya.com>
  * Licensed under the GNU General Public License v3.0.
  */
 

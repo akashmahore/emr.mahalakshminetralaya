@@ -1,6 +1,6 @@
 <?php
 /**
- * ICTHospital - the branch the signed in user is working at.
+ * Mahalakshmi Netralaya - the branch the signed in user is working at.
  *
  * A user tied to a branch always works there. A user with no branch (usually an
  * administrator) works across all branches, or picks one from the top bar for the
@@ -9,7 +9,7 @@
  * Records written before branches existed have no branch and show everywhere.
  *
  * Copyright (c) Mahalakshmi Netralaya <https://www.ictinnovations.com>
- * Part of ICTHospital <https://www.icthospital.com>
+ * Part of Mahalakshmi Netralaya <https://www.Mahalakshmi Netralaya.com>
  * Licensed under the GNU General Public License v3.0.
  */
 

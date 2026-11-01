@@ -12,9 +12,9 @@
     <meta charset="utf-8">
     <title>Sign in · {{ $institute->name ?? 'Mahalakshmi Netralaya' }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="{{ 'https://bumpy-turquoise-lorzytfb.edgeone.dev/favicon.ico' }}" sizes="any">
-    <link rel="icon" type="image/svg+xml" href="{{ 'https://bumpy-turquoise-lorzytfb.edgeone.dev/mark.svg' }}">
-    <link rel="apple-touch-icon" href="{{ 'https://bumpy-turquoise-lorzytfb.edgeone.dev/favicon-180.png' }}">
+    <link rel="icon" href="{{ 'https://logo-dppl33p2y7zo.edgeone.dev/favicon.ico' }}" sizes="any">
+    <link rel="icon" type="image/svg+xml" href="{{ 'https://logo-dppl33p2y7zo.edgeone.dev/mark.svg' }}">
+    <link rel="apple-touch-icon" href="{{ 'https://logo-dppl33p2y7zo.edgeone.dev/favicon-180.png' }}">
     <link href="{{ asset('assets/vendor/fontawesome-5.15/css/all.min.css') }}" rel="stylesheet">
     <style>
         *, *::before, *::after { box-sizing: border-box; }
@@ -48,6 +48,8 @@
         .ih-alert.err { background: #fef2f2; color: #991b1b; border: 1px solid #fecaca; }
         .ih-foot { margin-top: 32px; color: #94a3b8; font-size: 13px; text-align: center; }
         .ih-foot a { color: #144572; text-decoration: none; }
+        .founder-badge { display: inline-flex; align-items: center; gap: 8px; background: rgba(255,255,255,.15); padding: 8px 16px; border-radius: 30px; font-size: 13px; font-weight: 600; margin-top: 16px; }
+        .founder-badge i { font-size: 14px; }
         @media (max-width: 900px) {
             .ih-login { grid-template-columns: 1fr; }
             .ih-side { display: none; }
@@ -58,22 +60,25 @@
 <body>
 <div class="ih-login">
     <aside class="ih-side">
-        <img src="{{ 'https://bumpy-turquoise-lorzytfb.edgeone.dev/logo-white.svg' }}" alt="Mahalakshmi Netralaya">
+        <img src="{{ 'https://logo-dppl33p2y7zo.edgeone.dev/logo-white.svg' }}" alt="Mahalakshmi Netralaya">
         <div style="position:relative;z-index:1">
             <h1>Advanced Eye Care Management</h1>
-            <p>Complete ophthalmology EMR for patient records, consultations, surgery, optical shop, and hospital operations — all in one place.</p>
-            <ul>
+            <p>Complete ophthalmology EMR for patient records, consultations, surgery, optical shop, and hospital operations — all in one place.</            <ul>
                 <li><i class="fas fa-eye"></i> Eye examinations & visual acuity</li>
                 <li><i class="fas fa-procedures"></i> Cataract, glaucoma, retina, cornea</li>
                 <li><i class="fas fa-glasses"></i> Optical shop & contact lenses</li>
             </ul>
+        </div>
+        <div class="founder-badge">
+            <i class="fas fa-user-md"></i>
+            <span>Founded by Dr. Akash Mahore</span>
         </div>
         <small>Mahalakshmi Netralaya — Advanced Eye Care Centre</small>
     </aside>
 
     <main class="ih-main">
         <div class="ih-card">
-            <img class="ih-mobile-logo" src="{{ 'https://bumpy-turquoise-lorzytfb.edgeone.dev/logo.svg' }}" alt="Mahalakshmi Netralaya">
+            <img class="ih-mobile-logo" src="{{ 'https://logo-dppl33p2y7zo.edgeone.dev/logo.svg' }}" alt="Mahalakshmi Netralaya">
             <h2>Sign in</h2>
             <p class="ih-sub">Welcome to {{ $institute->name ?? 'Mahalakshmi Netralaya' }}. Use your staff account.</p>
 
@@ -101,7 +106,7 @@
                 <button type="submit" class="ih-btn">Sign in</button>
             </form>
 
-            <div class="ih-foot">&copy; {{ date('Y') }} {{ $institute->name ?? 'Mahalakshmi Netralaya' }} &middot; Advanced Eye Care Centre</div>
+            <div class="ih-foot">&copy; {{ date('Y') }} {{ $institute->name ?? 'Mahalakshmi Netralaya' }} &middot; Advanced Eye Care Centre &middot; Founded by Dr. Akash Mahore</div>
         </div>
     </main>
 </div>

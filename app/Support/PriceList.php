@@ -1,6 +1,6 @@
 <?php
 /**
- * ICTHospital - what a service costs this patient, here.
+ * Mahalakshmi Netralaya - what a service costs this patient, here.
  *
  * Looks up the patient type's price for the care setting (outpatient or inpatient),
  * and falls back to the service's list price when that type has no price set. One
@@ -8,7 +8,7 @@
  * can never disagree.
  *
  * Copyright (c) Mahalakshmi Netralaya <https://www.ictinnovations.com>
- * Part of ICTHospital <https://www.icthospital.com>
+ * Part of Mahalakshmi Netralaya <https://www.Mahalakshmi Netralaya.com>
  * Licensed under the GNU General Public License v3.0.
  */
 

@@ -1,6 +1,6 @@
 <?php
 /**
- * ICTHospital - route level permission check.
+ * Mahalakshmi Netralaya - route level permission check.
  *
  * Three things were wrong with the version this replaces. It read
  * Auth::user()->group without checking anyone was signed in, so an unauthenticated
@@ -11,7 +11,7 @@
  * queries.
  *
  * Copyright (c) Mahalakshmi Netralaya <https://www.ictinnovations.com>
- * Part of ICTHospital <https://www.icthospital.com>
+ * Part of Mahalakshmi Netralaya <https://www.Mahalakshmi Netralaya.com>
  * Licensed under the GNU General Public License v3.0.
  */
 

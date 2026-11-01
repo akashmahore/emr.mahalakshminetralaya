@@ -1,6 +1,6 @@
 <?php
 /**
- * ICTHospital - patient medical history.
+ * Mahalakshmi Netralaya - patient medical history.
  *
  * The table came across from the CodeIgniter system with no controller and no view,
  * so the history a clinician most wants before seeing someone was unreachable. Entries
@@ -13,7 +13,7 @@
  * live patient record is still the one the screens link to.
  *
  * Copyright (c) Mahalakshmi Netralaya <https://www.ictinnovations.com>
- * Part of ICTHospital <https://www.icthospital.com>
+ * Part of Mahalakshmi Netralaya <https://www.Mahalakshmi Netralaya.com>
  * Licensed under the GNU General Public License v3.0.
  */
 

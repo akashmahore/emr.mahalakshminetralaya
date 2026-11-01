@@ -1,12 +1,12 @@
 {{--
-  ICTHospital - doctor add and edit form.
+  Mahalakshmi Netralaya - doctor add and edit form.
 
   One form for both. The department box is free text with a datalist of the
   departments already in use, so spelling stays consistent without needing a
   lookup table that nobody can fill in yet.
 
   Copyright (c) Mahalakshmi Netralaya <https://www.ictinnovations.com>
-  Part of ICTHospital <https://www.icthospital.com>
+  Part of Mahalakshmi Netralaya <https://www.Mahalakshmi Netralaya.com>
   Licensed under the GNU General Public License v3.0.
 --}}
 @extends('layouts.master')

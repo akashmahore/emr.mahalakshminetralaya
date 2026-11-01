@@ -1,6 +1,6 @@
 <?php
 /**
- * ICTHospital - who took each payment, and the end-of-shift cash close.
+ * Mahalakshmi Netralaya - who took each payment, and the end-of-shift cash close.
  *
  * At the end of a shift the cashier counts the drawer and hands over. The system
  * has to say what should be there: every payment that cashier took since their last
@@ -8,7 +8,7 @@
  * cannot be counted twice or slip between two shifts.
  *
  * Copyright (c) Mahalakshmi Netralaya <https://www.ictinnovations.com>
- * Part of ICTHospital <https://www.icthospital.com>
+ * Part of Mahalakshmi Netralaya <https://www.Mahalakshmi Netralaya.com>
  * Licensed under the GNU General Public License v3.0.
  */
 
